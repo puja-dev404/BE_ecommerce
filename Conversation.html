@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./assets/css/nav.css">
     <link rel="stylesheet" href="./assets/css/orders.css">
     <link rel="stylesheet" href="./assets/css/conversation.css">
+    <link rel="stylesheet" href="./assets/css/Inventory.css">
 
 
 </head>
@@ -80,59 +81,121 @@
                         <div class="notification-icon me-4">
                             <i class="fa fa-bell"></i>
                         </div>
-                        <img src="./assets/images/user_icon.png" alt="Profile" class="user-icon me-4">
+                        <img src="./assets/images/user_icxon.png" alt="Profile" class="user-icon me-4">
                     </div>
                 </div>
             </header>
 
           <!-- chat -->
-          <div class="container">
-            <div class="row">
-              <section class="discussions">
-                <div class="discussion search">
-                  <div class="searchbar">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                    <input type="text" placeholder="Search...">
-                  </div>
+          <main class="main-content p-3">
+            <section class="orders-header d-flex justify-content-between align-items-center">
+              <!-- Left Side: Inventory Info -->
+              <div class="d-flex align-items-center  left_sec">
+                <h5 class="mb-0">Conversations with Customers</h5>
+              </div>
+              <!-- Right Side: Add Button -->
+              <div class="add-btn-container">
+                    <button class="btn-add">
+                      New Message
+                    </button>
+                  </a>
+                </div>             
+            </section>
+          </main>
+          <!-- chat -->
+          <div class="container-fluid chat-container">
+            <!-- Contacts Section -->
+            <div class="col-3 contacts-section">
+                <h5 class="mb-3">Contacts</h5>
+                <div class="contact-item">
+                    <img src="https://via.placeholder.com/40" alt="User" class="rounded-circle">
+                    <div>
+                        <p class="m-0">Jane Doe</p>
+                        <small>Hi, how are you?</small>
+                    </div>
                 </div>
-                <!-- Discussions List -->
-                <div class="discussion message-active">
-                  <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1');">
-                    <div class="online"></div>
-                  </div>
-                  <div class="desc-contact">
-                    <p class="name">Megan Leib</p>
-                    <p class="message">9 pm at the bar if possible 😳</p>
-                  </div>
-                  <div class="timer">12 sec</div>
+                <div class="contact-item">
+                    <img src="https://via.placeholder.com/40" alt="User" class="rounded-circle">
+                    <div>
+                        <p class="m-0">John Smith</p>
+                        <small>Can you help me?</small>
+                    </div>
                 </div>
-                <!-- Additional Discussions -->
-                <!-- Repeat similar structure -->
-              </section>
-          
-              <section class="chat">
-                <div class="header-chat">
-                  <i class="icon fa fa-user-o"></i>
-                  <p class="name">Megan Leib</p>
-                  <i class="icon clickable fa fa-ellipsis-h"></i>
-                </div>
-                <div class="messages-chat">
-                  <div class="message">
-                    <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1');"></div>
-                    <p class="text">Hi, how are you?</p>
-                  </div>
-                  <p class="time">14h58</p>
-                  <!-- Additional Messages -->
-                </div>
-                <div class="footer-chat">
-                  <i class="icon fa fa-smile-o clickable" style="font-size: 25pt;"></i>
-                  <input type="text" class="write-message" placeholder="Type your message here">
-                  <i class="icon send fa fa-paper-plane-o clickable"></i>
-                </div>
-              </section>
             </div>
-          </div>
+    
+            <!-- Chat Section -->
+            <div class="col-9 chat-section border rounded p-3">
+              <!-- Header Section -->
+              <div class="  chat-header d-flex justify-content-between align-items-center border-bottom pb-2">
+                  <div class="d-flex align-items-center">
+                      <img src="user-img.jpg" alt="User Image" class="rounded-circle me-2" style="width: 50px; height: 50px;">
+                      <div>
+                          <div class="d-flex align-items-center">
+                              <span class="fw-bold">User Name</span>
+                              <span class="text-success ms-2">● Online</span>
+                          </div>
+                          <span class="text-muted">12:30 PM</span>
+                      </div>
+                  </div>
+                  <div class="header-right" style="max-width: 40%; text-align: right;">
+                      <button class="btn btn-sm btn-outline-primary me-2">New Customer</button>
+                      <button class="btn btn-sm btn-outline-secondary">View Profile</button>
+                      <div class="d-flex align-items-center mt-2 justify-content-end">
+                          <i class="bi bi-box me-2"></i>
+                          <span>0 Products</span>
+                      </div>
+                  </div>
+              </div>
           
+              <!-- Date Section -->
+              <div class="date-section text-center py-2">
+                  <button class="btn btn-sm btn-outline-dark">12 Aug 2022</button>
+              </div>
+          
+              <!-- Chat Messages Section -->
+              <div class="chat-messages px-3 py-2" style="flex-grow: 1; overflow-y: auto;">
+                  <!-- Received Message -->
+                  <div class="message received d-flex mb-3">
+                      <img src="user-img.jpg" alt="User Image" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                      <div>
+                          <div class="message-text bg-light rounded p-2">
+                              Hello! How can I help you?
+                          </div>
+                          <small class="text-muted">12:31 PM</small>
+                      </div>
+                  </div>
+                  <!-- Sent Message -->
+                  <div class="message sent d-flex flex-row-reverse mb-3">
+                      <div>
+                          <div class="message-text bg-primary text-white rounded p-2">
+                              I need assistance with my account.
+                          </div>
+                          <small class="text-muted text-end d-block">12:32 PM <i class="bi bi-check-all text-primary"></i></small>
+                      </div>
+                  </div>
+              </div>
+          
+              <!-- Chat Input Section -->
+              <div class="chat-input d-flex border-top pt-2">
+                  <input type="text" placeholder="Type a message..." class="form-control me-2">
+                  <button class="btn btn-primary">Send</button>
+              </div>
+          
+              <!-- Additional Info Section -->
+              <div class="additional-info d-flex border-top py-2 px-3 align-items-center">
+                  <img src="info-img.jpg" alt="Info Image" class="rounded me-3" style="width: 60px; height: 60px;">
+                  <div>
+                      <span class="fw-bold">Information Title</span><br>
+                      <span class="text-muted">Additional Text</span>
+                  </div>
+                  <span class="ms-auto text-muted">12 Stack</span>
+              </div>
+          </div>
+                   
+        </div>
+    
+
+           
             
         </div>
     </div>

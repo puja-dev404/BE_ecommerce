@@ -1,83 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-  /* Menu */
-  .menu {
-    width: 70px;
-    background: linear-gradient(#4768b5, #35488e);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .menu .items {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .menu .item {
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #9fb5ef;
-    font-size: 17pt;
-    border-bottom: 1px solid #6780cc;
-    cursor: pointer;
-  }
-  
-  /* Discussions */
-  .discussions {
-    width: 35%;
-    background-color: #87a3ec;
-    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-  }
-  
-  .discussions .discussion {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #E0E0E0;
-    cursor: pointer;
-  }
-  
-  .discussions .search .searchbar {
-    display: flex;
-    align-items: center;
-    background-color: #FFF;
-    padding: 0 15px;
-    border-radius: 50px;
-    border: 1px solid #EEE;
-    width: 70%;
-  }
-  
-  .discussions .search .searchbar input {
-    margin-left: 10px;
-    border: none;
-    width: 100%;
-    outline: none;
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  /* Chat */
-  .chat {
-    width: 65%;
-    padding: 15px;
-  }
-  
-  .header-chat {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .messages-chat {
-    overflow-y: auto;
-    height: 550px;
-  }
-  
-  .footer-chat {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-  }
-  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #f8f9fc;
+  margin: 0;
+  padding: 0;
+}
+
+/* font family */
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.chat-container {
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Flexbox to align sections */
+}
+
+.contacts-section {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column; 
+}
+
+.chat-section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-section {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header {
+  margin-bottom: 10px;
+}
+
+.chat-header .header-right {
+  padding-right: 20px; /* Add space on the right */
+}
+
+.chat-messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  padding-right: 20px; /* Add right-side gap */
+}
+
+.chat-input input {
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.chat-input button {
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.message-text {
+  max-width: 60%;
+  word-wrap: break-word;
+}
+
+.message.received .message-text {
+  background-color: #f1f1f1;
+}
+
+.message.sent .message-text {
+  background-color: #007bff;
+  color: white;
+}
+
+.additional-info img {
+  object-fit: cover;
+}
+
+.additional-info span {
+  font-size: 14px;
+}
+
+.date-section button {
+  font-size: 12px;
+  border-radius: 20px;
+}
