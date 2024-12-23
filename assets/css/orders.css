@@ -43,20 +43,6 @@ body {
   border-radius: 12px;
 }
 
-.order-box h5 {
-  color: #8B8D97;
-  font-size: 15px;
-}
-
-.order-box p {
-  font-size: 16px;
-  color: #45464E;
-}
-
-.sub-text {
-  color: #8B8D97;
-  font-size: 16px;
-}
 
 /* Custom Dropdown Button */
 .custom-dropdown-btn {
@@ -65,6 +51,7 @@ body {
   color: #8B8D97;
   display: flex;
   justify-content: flex-start;
+  /* Align the button content to the left */
   background-color: transparent;
 }
 
@@ -72,6 +59,7 @@ body {
 .custom-dropdown-btn i {
   margin-left: 4px;
   margin-top: 1px;
+  /* Adds proper vertical alignment */
 }
 
 
@@ -86,7 +74,9 @@ body {
   padding: 0;
   background-color: white;
   left: 0;
+  /* Align dropdown to the left */
   text-align: left;
+  /* Ensure text is left-aligned */
 }
 
 /* Custom Dropdown Item */
@@ -272,12 +262,12 @@ table {
 }
 
 thead th {
-  border-top: 1px solid #E1E2E9;
+  border-top: 1px solid #ddd;
   text-align: left;
   font-size: 15px;
   font-weight: 600;
   padding: 12px 8px;
-  border-bottom: 1px solid #E1E2E9;
+  border-bottom: 1px solid #ddd;
   color: #2C2D33;
 }
 
@@ -416,7 +406,9 @@ tbody td {
   display: block;
 }
 
-/* Pagination Section */
+
+
+/* Pagination section */
 .pagination-section {
   display: flex;
   justify-content: space-between;
@@ -424,7 +416,7 @@ tbody td {
   margin: 10px 0;
   padding: 8px 0;
   font-size: 14px;
-  border-top: 1px solid #E1E2E9;
+  border-top: 1px solid #ddd;
 }
 
 /* Left and Right Containers */
@@ -440,41 +432,11 @@ tbody td {
   display: flex;
   align-items: center;
   background-color: #5e636614;
-  /* padding: 5px 5px; */
+  padding: 5px 8px;
   border-radius: 5px;
   font-size: 15px;
   color: #8b8d97;
   gap: 5px;
-}
-
-/* Custom Select Styling */
-.custom-select {
-  border: none;
-  background-color: transparent;
-  font-size: 15px;
-  color: #8B8D97;
-  padding: 5px 8px;
-  cursor: pointer;
-  position: relative;
-}
-
-.custom-select:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-
-/* Pagination Icons */
-.pagination-icons i {
-  font-size: 16px;
-  color: #8b8d97;
-  cursor: pointer;
-  margin: 0 5px;
-}
-
-/* Hover Effect for Icons */
-.pagination-icons i:hover {
-  color: #45464E;
 }
 
 /* Page Info */
@@ -543,12 +505,27 @@ tbody td {
 }
 
 /* Amount Section Styles */
+.amount-section {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.amount-content {
+  display: flex;
+  gap: 10px;
+  /* Adds spacing between label and value */
+  align-items: center;
+}
 
 .amount-label {
-  font-weight: 500;
-  color: #2C2D33;
-  font-size: 16px !important;
+  font-weight: bold;
+  color: #333;
+}
 
+.amount-value {
+  font-size: 16px;
+  color: #007bff;
 }
 
 /* custumer veiw page css */
@@ -661,8 +638,4 @@ tbody td {
 
 .filter-button button:hover {
   background-color: #4a5ac9;
-}
-
-.total-row {
-  border-top: 1px solid #E1E2E9;
 }
