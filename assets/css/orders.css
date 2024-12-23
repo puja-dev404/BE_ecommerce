@@ -43,21 +43,32 @@ body {
   border-radius: 12px;
 }
 
-
+.order-box h5{
+  color: #8B8D97;
+  font-size: 15px;
+}
+.order-box p{
+  font-size: 16px;
+  color: #45464E;
+}
+ .sub-text{
+  color: #8B8D97;
+  font-size: 16px;
+ }
 /* Custom Dropdown Button */
 .custom-dropdown-btn {
   border: none;
   font-size: 14px;
   color: #8B8D97;
   display: flex;
-  justify-content: flex-start; /* Align the button content to the left */
+  justify-content: flex-start; 
   background-color: transparent;
 }
 
 /* Custom Dropdown Button Icon */
 .custom-dropdown-btn i {
   margin-left: 4px;
-  margin-top: 1px; /* Adds proper vertical alignment */
+  margin-top: 1px;
 }
 
 
@@ -71,8 +82,8 @@ body {
   min-width: 100px;
   padding: 0;
   background-color: white;
-  left: 0; /* Align dropdown to the left */
-  text-align: left; /* Ensure text is left-aligned */
+  left: 0; 
+  text-align: left;
 }
 
 /* Custom Dropdown Item */
@@ -376,6 +387,8 @@ tbody td {
   display: inline-block;
 }
 
+
+
 /* Hide default icon */
 .action-btn::after {
   content: none;
@@ -403,6 +416,7 @@ tbody td {
 
 
 /* Pagination section */
+/* Pagination Section */
 .pagination-section {
   display: flex;
   justify-content: space-between;
@@ -431,6 +445,36 @@ tbody td {
   font-size: 15px;
   color: #8b8d97;
   gap: 5px;
+}
+
+/* Custom Select Styling */
+.custom-select {
+  border: none;  
+  background-color: transparent;  
+  font-size: 15px;
+  color: #8b8d97;
+  padding: 5px 8px;
+  font-family: inherit;
+  cursor: pointer;
+  position: relative; 
+}
+
+.custom-select:focus {
+  outline: none;  
+  box-shadow: none;  
+}
+
+/* Pagination Icons */
+.pagination-icons i {
+  font-size: 16px;
+  color: #8b8d97;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+/* Hover Effect for Icons */
+.pagination-icons i:hover {
+  color: #45464E;
 }
 
 /* Page Info */
@@ -499,27 +543,37 @@ tbody td {
 }
 
 /* Amount Section Styles */
-.amount-section {
+/* .amount-section {
   margin-top: 15px;
   display: flex;
   justify-content: center;
-}
+  border: top 1px solid #E1E2E9;
+} */
 
-.amount-content {
+/* .amount-content {
   display: flex;
   gap: 10px;
-  /* Adds spacing between label and value */
   align-items: center;
 }
+.amount-content span {
+  color: #2C2D33;
+  font-size: 16px;
+  font-weight: 500;
+} */
 
-.amount-label {
-  font-weight: bold;
-  color: #333;
-}
+/* 
 
 .amount-value {
   font-size: 16px;
-  color: #007bff;
+  color: #5570F1;
+} */
+
+
+.amount-label {
+    font-weight: 500;
+    color: #2C2D33;
+    font-size: 16px !important; 
+  
 }
 
 /* custumer veiw page css */
@@ -633,3 +687,4 @@ tbody td {
 .filter-button button:hover {
   background-color: #4a5ac9;
 }
+
