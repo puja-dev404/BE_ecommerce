@@ -424,7 +424,7 @@ tbody td {
   margin: 10px 0;
   padding: 8px 0;
   font-size: 14px;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #E1E2E9;
 }
 
 /* Left and Right Containers */
@@ -440,7 +440,7 @@ tbody td {
   display: flex;
   align-items: center;
   background-color: #5e636614;
-  padding: 5px 8px;
+  /* padding: 5px 5px; */
   border-radius: 5px;
   font-size: 15px;
   color: #8b8d97;
