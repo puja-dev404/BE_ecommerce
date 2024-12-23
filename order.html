@@ -353,9 +353,35 @@
                   </div>
                 </div>
                 <!-- Date range Button -->
-                <button class="filter-btn">
-                  <i class="fa-regular fa-calendar"></i> Date Range
-                </button>
+                <div class="position-relative">
+                  <!-- Date Range Button -->
+                  <button class="filter-btn date-range-btn">
+                    <i class="fa-regular fa-calendar"></i> Date Range
+                  </button>
+                
+                  <!-- Date Range Dropdown -->
+                  <div class="filter-menu date-range-menu d-none">
+                    <p class="filter-title">Select Date Range</p>
+                    <div class="filter-section">
+                      <div class="row g-3">
+                        <!-- Start Date -->
+                        <div class="col-12">
+                          <label for="start-date" class="form-label">Start Date</label>
+                          <input type="date" class="form-control" id="start-date">
+                        </div>
+                        <!-- End Date -->
+                        <div class="col-12">
+                          <label for="end-date" class="form-label">End Date</label>
+                          <input type="date" class="form-control" id="end-date">
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Apply Button -->
+                    <div class="filter-button mt-3">
+                      <button class="btn btn-primary w-100">Apply</button>
+                    </div>
+                  </div>
+                </div>                
                 <!-- delte tion Dropdown -->
                 <button class="filter-btn bg-danger text-white  border-0">
                  Delete <i class="fa-regular fa-trash-can "></i>
