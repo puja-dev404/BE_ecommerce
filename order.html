@@ -228,7 +228,7 @@
                 <!-- Filter Button -->
                 <div class="position-relative">
                   <button class="filter-btn order-filter-btn">
-                    <i class="bi bi-funnel"></i> Filter test
+                    <i class="bi bi-funnel"></i> Filter
                   </button>
                   <div class="filter-menu order-filter-menu d-none">
                     <p class="filter-title">Filter</p>
@@ -236,12 +236,14 @@
                     <div class="filter-section">
                       <p class="label">Order Type</p>
                       <div class="d-flex justify-content-between order-type">
+                        
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" value="" id="home-delivery">
                           <label class="form-check-label" for="home-delivery">
                             Home Delivery
                           </label>
                         </div>
+                        
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" value="" id="pick-up">
                           <label class="form-check-label" for="pick-up">
@@ -250,8 +252,7 @@
                         </div>
                       </div>
                     </div>
-
-                    <div class="filter-section">
+                    <div class="filter-section mb-3">
                       <label for="status" class="float-start label">Status</label>
                       <select id="status" class="form-select filter-dropdown">
                         <option value="all">All</option>
@@ -264,8 +265,7 @@
                         <option value="all">All</option>
                       </select>
                     </div>
-
-                    <div class="amount-section">
+                    <div class="amount-section mt-2">
                       <p class="label">Amount</p>
                       <div class="amount-inputs">
                         <div class="row">
@@ -345,35 +345,20 @@
                             </div>
                           </div>
                         </div>
-
-                      </div>
-                      <hr />
-                      <div class="d-flex justify-content-between order-type">
-                        <div class="row">
-                          <div class="col-md-12">
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="date-range">
-                              <label class="form-check-label" for="date-range">
-                                Date Range
-                              </label>
-                            </div>
-                          </div>
-                        </div>
                       </div>
                     </div>
-
                     <div class="filter-button mt-3">
                       <button>Filter</button>
                     </div>
                   </div>
                 </div>
-                <!-- Share Button -->
+                <!-- Date range Button -->
                 <button class="filter-btn">
-                  <i class="fa-regular fa-paper-plane"></i> Share
+                  <i class="fa-regular fa-calendar"></i> Date Range
                 </button>
-                <!-- Bulk Action Dropdown -->
-                <button class="filter-btn">
-                  Bulk Action <i class="fa-solid fa-angle-down"></i>
+                <!-- delte tion Dropdown -->
+                <button class="filter-btn bg-danger text-white  border-0">
+                 Delete <i class="fa-regular fa-trash-can "></i>
                 </button>
               </div>
             </header>
