@@ -265,13 +265,13 @@
                       <td>₦50,000.00</td>
                       <td>
                         <div class="dropdown-container">
-                          <button class="action-btn dropdown-toggle">
+                          <button class="action-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Pending <i class="fa-solid fa-angle-down"></i>
                           </button>
-                          <ul class="dropdown-menu">
-                            <li data-status="completed" class="dropdown-item">Completed</li>
-                            <li data-status="in-progress" class="dropdown-item">In Progress</li>
-                            <li data-status="pending" class="dropdown-item">Pending</li>
+                          <ul class="dropdown-menu custom-dropdown-menu active" aria-labelledby="timePeriod2">
+                            <li><a class="dropdown-item" href="#">Completed</a></li>
+                            <li><a class="dropdown-item" href="#">In Progress</a></li>
+                            <li><a class="dropdown-item" href="#">Pending</a></li>
                           </ul>
                         </div>
                       </td>
@@ -296,13 +296,13 @@
                       <td>₦50,000.00</td>
                       <td>
                         <div class="dropdown-container">
-                          <button class="action-btn dropdown-toggle">
+                          <button class="action-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Pending <i class="fa-solid fa-angle-down"></i>
                           </button>
-                          <ul class="dropdown-menu">
-                            <li data-status="completed" class="dropdown-item">Completed</li>
-                            <li data-status="in-progress" class="dropdown-item">In Progress</li>
-                            <li data-status="pending" class="dropdown-item">Pending</li>
+                          <ul class="dropdown-menu custom-dropdown-menu active" aria-labelledby="timePeriod2">
+                            <li><a class="dropdown-item" href="#">Completed</a></li>
+                            <li><a class="dropdown-item" href="#">In Progress</a></li>
+                            <li><a class="dropdown-item" href="#">Pending</a></li>
                           </ul>
                         </div>
                       </td>
@@ -327,26 +327,27 @@
                       <td>₦50,000.00</td>
                       <td>
                         <div class="dropdown-container">
-                          <button class="action-btn dropdown-toggle">
+                          <button class="action-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Pending <i class="fa-solid fa-angle-down"></i>
                           </button>
-                          <ul class="dropdown-menu">
-                            <li data-status="completed" class="dropdown-item">Completed</li>
-                            <li data-status="in-progress" class="dropdown-item">In Progress</li>
-                            <li data-status="pending" class="dropdown-item">Pending</li>
+                          <ul class="dropdown-menu custom-dropdown-menu active" aria-labelledby="timePeriod2">
+                            <li><a class="dropdown-item" href="#">Completed</a></li>
+                            <li><a class="dropdown-item" href="#">In Progress</a></li>
+                            <li><a class="dropdown-item" href="#">Pending</a></li>
                           </ul>
                         </div>
                       </td>
                       <td><button class="status-btn pending">Pending</button></td>
                     </tr>
-                    <tr>
+                    <!-- Total Row -->
+                    <tr class="total-row">
                       <td colspan="4"></td>
-                      <td  class="amount-label ">Total</td>
+                      <td class="amount-label">Total</td>
                       <td class="amount-label">₦150,000.00</td>
                     </tr>
                   </tbody>
-                </table>            
-              </div>
+                </table>
+              </div>              
             </div>
           </section>
         </section>
