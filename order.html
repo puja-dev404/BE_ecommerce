@@ -128,7 +128,7 @@
                 </div>
               </article>
             </div>
-        
+
             <!-- 2nd Order Box -->
             <div class="col-lg-4">
               <article class="order-box p-3 rounded h-100">
@@ -164,7 +164,7 @@
                 </div>
               </article>
             </div>
-        
+
             <!-- 3rd Order Box -->
             <div class="col-lg-4">
               <article class="order-box p-3 rounded h-100">
@@ -197,13 +197,14 @@
               </article>
             </div>
           </div>
-        
+
           <!-- Empty State Section -->
           <div class="row mt-4">
             <section class="col-12">
               <div class="empty-state text-center py-4 rounded">
                 <div class="empty-img mb-3">
-                  <img src="./assets/images/iconContainer.png" alt="Empty State" class="img-fluid" style="width: 120px;">
+                  <img src="./assets/images/iconContainer.png" alt="Empty State" class="img-fluid"
+                    style="width: 120px;">
                 </div>
                 <h3 class="heading">No Orders Yet?</h3>
                 <p class="empty-text">Add products to your store and start selling to see orders here.</p>
@@ -213,398 +214,393 @@
               </div>
             </section>
           </div>
-          
-        <!-- Orders Table Section -->
-        <section class="col-12 mt-4">
-          <div class="table-container py-4 ">
-            <header class="table-header">
-              <h2>Customer</h2>
-              <div class="table-actions">
-                <!-- Search Bar -->
-                <div class="search-bar">
-                  <i class="bi bi-search"></i>
-                  <input type="text" placeholder="Search" />
-                </div>
-                <!-- Filter Button -->
-                <div class="position-relative">
-                  <button class="filter-btn order-filter-btn">
-                    <i class="bi bi-funnel"></i> Filter
-                  </button>
-                  <div class="filter-menu order-filter-menu d-none">
-                    <p class="filter-title">Filter</p>
 
-                    <div class="filter-section">
-                      <p class="label">Order Type</p>
-                      <div class="d-flex justify-content-between order-type">
-                        
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="home-delivery">
-                          <label class="form-check-label" for="home-delivery">
-                            Home Delivery
-                          </label>
-                        </div>
-                        
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="pick-up">
-                          <label class="form-check-label" for="pick-up">
-                            Pick Up
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="filter-section mb-3">
-                      <label for="status" class="float-start label">Status</label>
-                      <select id="status" class="form-select filter-dropdown">
-                        <option value="all">All</option>
-                      </select>
-                    </div>
+          <!-- Orders Table Section -->
+          <section class="col-12 mt-4">
+            <div class="table-container py-4 ">
+              <header class="table-header">
+                <h2>Customer</h2>
+                <div class="table-actions">
+                  <!-- Search Bar -->
+                  <div class="search-bar">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="Search" />
+                  </div>
+                  <!-- Filter Button -->
+                  <div class="position-relative">
+                    <button class="filter-btn order-filter-btn">
+                      <i class="bi bi-funnel"></i> Filter
+                    </button>
+                    <div class="filter-menu order-filter-menu d-none">
+                      <p class="filter-title">Filter</p>
 
-                    <div class="filter-section">
-                      <label for="customer" class="float-start label">Customer</label>
-                      <select id="customer" class="form-select filter-dropdown">
-                        <option value="all">All</option>
-                      </select>
-                    </div>
-                    <div class="amount-section mt-2">
-                      <p class="label">Amount</p>
-                      <div class="amount-inputs">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <label for="from" class="amount-label float-start">From</label>
-                            <input type="number" id="from" value="0.00" class="form-control amount-input w-100" />
+                      <div class="filter-section">
+                        <p class="label">Order Type</p>
+                        <div class="d-flex justify-content-between order-type">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="home-delivery">
+                            <label class="form-check-label" for="home-delivery">
+                              Home Delivery
+                            </label>
                           </div>
-                          <div class="col-md-6">
-                            <label for="to" class="amount-label float-start">To</label>
-                            <input type="number" id="to" value="0.00" class="form-control amount-input w-100" />
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="pick-up">
+                            <label class="form-check-label" for="pick-up">
+                              Pick Up
+                            </label>
                           </div>
                         </div>
                       </div>
-                    </div>
 
-                    <div class="filter-button mt-3">
-                      <button>Filter</button>
+                      <div class="filter-section">
+                        <label for="status" class="float-start label">Status</label>
+                        <select id="status" class="form-select filter-dropdown">
+                          <option value="all">All</option>
+                        </select>
+                      </div>
+
+                      <div class="filter-section">
+                        <label for="customer" class="float-start label">Customer</label>
+                        <select id="customer" class="form-select filter-dropdown">
+                          <option value="all">All</option>
+                        </select>
+                      </div>
+
+                      <div class="amount-section">
+                        <p class="label">Amount</p>
+                        <div class="amount-inputs">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <label for="from" class="amount-label float-start">From</label>
+                              <input type="number" id="from" value="0.00" class="form-control amount-input w-100" />
+                            </div>
+                            <div class="col-md-6">
+                              <label for="to" class="amount-label float-start">To</label>
+                              <input type="number" id="to" value="0.00" class="form-control amount-input w-100" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="filter-button mt-3">
+                        <button>Filter</button>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <!-- Date Picker Button -->
-                <div class="position-relative">
-                  <button class="filter-btn data-filter-btn">
-                    <i class="fa-regular fa-calendar-days"></i> Filter
-                  </button>
-                  <div class="filter-menu data-filter-menu d-none">
-                    <p class="filter-title">By Date</p>
-                    <div class="filter-section">
-                      <div class="d-flex justify-content-between order-type">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="this-week">
-                              <label class="form-check-label" for="this-week">
-                                This Week
-                              </label>
+                  <!-- Date Picker Button -->
+                  <div class="position-relative">
+                    <button class="filter-btn data-filter-btn">
+                      <i class="fa-regular fa-calendar-days"></i> Filter
+                    </button>
+                    <div class="filter-menu data-filter-menu d-none">
+                      <p class="filter-title">By Date</p>
+                      <div class="filter-section">
+                        <div class="d-flex justify-content-between order-type">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="this-week">
+                                <label class="form-check-label" for="this-week">
+                                  This Week
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="last-week">
+                                <label class="form-check-label" for="last-week">
+                                  Last Week
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="this-month">
+                                <label class="form-check-label" for="this-month">
+                                  This Month
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="last-month">
+                                <label class="form-check-label" for="last-month">
+                                  Last Month
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="this-year">
+                                <label class="form-check-label" for="this-year">
+                                  This Year
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="last-year">
+                                <label class="form-check-label" for="last-year">
+                                  Last Year
+                                </label>
+                              </div>
                             </div>
                           </div>
-                          <div class="col-md-6">
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="last-week">
-                              <label class="form-check-label" for="last-week">
-                                Last Week
-                              </label>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="this-month">
-                              <label class="form-check-label" for="this-month">
-                                This Month
-                              </label>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="last-month">
-                              <label class="form-check-label" for="last-month">
-                                Last Month
-                              </label>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="this-year">
-                              <label class="form-check-label" for="this-year">
-                                This Year
-                              </label>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="last-year">
-                              <label class="form-check-label" for="last-year">
-                                Last Year
-                              </label>
+
+                        </div>
+                        <hr />
+                        <div class="d-flex justify-content-between order-type">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="date-range">
+                                <label class="form-check-label" for="date-range">
+                                  Date Range
+                                </label>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="filter-button mt-3">
-                      <button>Filter</button>
-                    </div>
-                  </div>
-                </div>
-                <!-- Date range Button -->
-                <div class="position-relative">
-                  <!-- Date Range Button -->
-                  <button class="filter-btn date-range-btn">
-                    <i class="fa-regular fa-calendar"></i> Date Range
-                  </button>
-                
-                  <!-- Date Range Dropdown -->
-                  <div class="filter-menu date-range-menu d-none">
-                    <p class="filter-title">Select Date Range</p>
-                    <div class="filter-section">
-                      <div class="row g-3">
-                        <!-- Start Date -->
-                        <div class="col-12">
-                          <label for="start-date" class="form-label">Start Date</label>
-                          <input type="date" class="form-control" id="start-date">
-                        </div>
-                        <!-- End Date -->
-                        <div class="col-12">
-                          <label for="end-date" class="form-label">End Date</label>
-                          <input type="date" class="form-control" id="end-date">
-                        </div>
+
+                      <div class="filter-button mt-3">
+                        <button>Filter</button>
                       </div>
                     </div>
-                    <!-- Apply Button -->
-                    <div class="filter-button mt-3">
-                      <button class="btn btn-primary w-100">Apply</button>
-                    </div>
                   </div>
-                </div>                
-                <!-- delte tion Dropdown -->
-                <button class="filter-btn bg-danger text-white  border-0">
-                 Delete <i class="fa-regular fa-trash-can "></i>
-                </button>
-              </div>
-            </header>
-
-            <!-- Table -->
-            <table>
-              <thead>
-                <tr>
-                  <th>
-                    <label class="custom-checkbox">
-                      <input type="checkbox" id="select-all">
-                      <span></span>
-                    </label>
-                  </th>
-                  <th>Customer Name <i class="bi bi-filter"></i></th>
-                  <th>Order Date <i class="bi bi-filter"></i></th>
-                  <th>Order Type <i class="bi bi-filter"></i></th>
-                  <th>Tracking ID <i class="bi bi-filter"></i></th>
-                  <th>Order Total <i class="bi bi-filter"></i></th>
-                  <th>Action <i class="bi bi-filter"></i></th>
-                  <th>Status <i class="bi bi-filter"></i></th>
-                </tr>
-              </thead>
-
-              <tbody>
-                <tr>
-                  <td>
-                    <label class="custom-checkbox">
-                      <input type="checkbox" class="row-checkbox">
-                      <span></span>
-                    </label>
-                  </td>
-                  <td onclick="window.location.href='view-orders.html';" style="cursor: pointer;">Janet Adebayo</td>
-                  <td>12 Aug 2022 - 12:25 am</td>
-                  <td>Home Delivery</td>
-                  <td>9348fj73 <i class="fa-regular fa-copy"></i></td>
-                  <td>₦25,000.00</td>
-                  <td>
-                    <div class="dropdown-container">
-                      <button class="action-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Completed <i class="fa-solid fa-angle-down"></i>
-                      </button>
-                      <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="timePeriod2">
-                        <li><a class="dropdown-item" href="#">Completed</a></li>
-                        <li><a class="dropdown-item" href="#">In Progress</a></li>
-                        <li><a class="dropdown-item" href="#">In Progress</a></li>
-                      </ul>
-                    </div>
-                  </td>
-                  <td><button class="status-btn completed">Completed</button></td>
-                </tr>
-                <tr>
-                  <td>
-                    <label class="custom-checkbox">
-                      <input type="checkbox" class="row-checkbox">
-                      <span></span>
-                    </label>
-                  </td>
-                  <td onclick="window.location.href='view-orders.html';" style="cursor: pointer;">Daniel Afolabi</td>
-                  <td>19 Oct 2023 - 10:45 am</td>
-                  <td>Pick Up</td>
-                  <td>0392dh29 <i class="fa-regular fa-copy"></i></td>
-                  <td>₦15,000.00</td>
-                  <td>
-                    <div class="dropdown-container">
-                      <button class="action-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        In-Progress <i class="fa-solid fa-angle-down"></i>
-                      </button>
-                      <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="timePeriod2">
-                        <li><a class="dropdown-item" href="#">Completed</a></li>
-                        <li><a class="dropdown-item" href="#">In Progress</a></li>
-                        <li><a class="dropdown-item" href="#">Pending</a></li>
-                      </ul>
-                    </div>
-                  </td>
-                  <td><button class="status-btn in-progress">In-Progress</button></td>
-                </tr>
-                <tr>
-                  <td>
-                    <label class="custom-checkbox">
-                      <input type="checkbox" class="row-checkbox">
-                      <span></span>
-                    </label>
-                  </td>
-                  <td onclick="window.location.href='view-orders.html';" style="cursor: pointer;">Daniel Afolabi</td>
-                  <td>19 Oct 2023 - 10:45 am</td>
-                  <td>Pick Up</td>
-                  <td>0392dh29 <i class="fa-regular fa-copy"></i></td>
-                  <td>₦15,000.00</td>
-                  <td>
-                    <div class="dropdown-container">
-                      <button class="action-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                       Pending<i class="fa-solid fa-angle-down"></i>
-                      </button>
-                      <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="timePeriod2">
-                        <li><a class="dropdown-item" href="#">Completed</a></li>
-                        <li><a class="dropdown-item" href="#">In Progress</a></li>
-                        <li><a class="dropdown-item" href="#">Pending</a></li>
-                      </ul>
-                    </div>
-                  </td>
-                  <td><button class="status-btn pending">Pending </button></td>
-                </tr>
-                <tr>
-                  <td>
-                    <label class="custom-checkbox">
-                      <input type="checkbox" class="row-checkbox">
-                      <span></span>
-                    </label>
-                  </td>
-                  <td onclick="window.location.href='view-orders.html';" style="cursor: pointer;">Janet Adebayo</td>
-                  <td>12 Aug 2022 - 12:25 am</td>
-                  <td>Home Delivery</td>
-                  <td>9348fj73 <i class="fa-regular fa-copy"></i></td>
-                  <td>₦25,000.00</td>
-                  <td>
-                    <div class="dropdown-container">
-                      <button class="action-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Completed <i class="fa-solid fa-angle-down"></i>
-                      </button>
-                      <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="timePeriod2">
-                        <li><a class="dropdown-item" href="#">Completed</a></li>
-                        <li><a class="dropdown-item" href="#">In Progress</a></li>
-                        <li><a class="dropdown-item" href="#">Pending</a></li>
-                      </ul>
-                    </div>
-                  </td>
-                  <td><button class="status-btn completed">Completed</button></td>
-                </tr>
-                <tr>
-                  <td>
-                    <label class="custom-checkbox">
-                      <input type="checkbox" class="row-checkbox">
-                      <span></span>
-                    </label>
-                  </td>
-                  <td onclick="window.location.href='view-orders.html';" style="cursor: pointer;">Daniel Afolabi</td>
-                  <td>19 Oct 2023 - 10:45 am</td>
-                  <td>Pick Up</td>
-                  <td>0392dh29 <i class="fa-regular fa-copy"></i></td>
-                  <td>₦15,000.00</td>
-                  <td>
-                    <div class="dropdown-container">
-                      <button class="action-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        In-Progress <i class="fa-solid fa-angle-down"></i>
-                      </button>
-                      <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="timePeriod2">
-                        <li><a class="dropdown-item" href="#">Completed</a></li>
-                        <li><a class="dropdown-item" href="#">In Progress</a></li>
-                        <li><a class="dropdown-item" href="#">Pending</a></li>
-                      </ul>
-                    </div>
-                  </td>
-                  <td><button class="status-btn in-progress">In-Progress</button></td>
-                </tr>
-                <tr>
-                  <td>
-                    <label class="custom-checkbox">
-                      <input type="checkbox" class="row-checkbox">
-                      <span></span>
-                    </label>
-                  </td>
-                  <td onclick="window.location.href='view-orders.html';" style="cursor: pointer;">Daniel Afolabi</td>
-                  <td>19 Oct 2023 - 10:45 am</td>
-                  <td>Pick Up</td>
-                  <td>0392dh29 <i class="fa-regular fa-copy"></i></td>
-                  <td>₦15,000.00</td>
-                  <td>
-                    <div class="dropdown-container">
-                      <button class="action-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Pending <i class="fa-solid fa-angle-down"></i>
-                      </button>
-                      <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="timePeriod2">
-                        <li><a class="dropdown-item" href="#">Completed</a></li>
-                        <li><a class="dropdown-item" href="#">In Progress</a></li>
-                        <li><a class="dropdown-item" href="#">Pending </a></li>
-                      </ul>
-                    </div>
-                  </td>
-                  <td><button class="status-btn pending">Pending </button></td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- pegination -->
-            <div class="pagination-section">
-              <div class="pagination-left">
-                <div class="pagination-item">
-                  <select class="custom-select">
-                    <option value="10">10</option>
-                    <option value="20">20</option>
-                    <option value="30">30</option>
-                    <option value="50">50</option>
-                  </select>
+                  <!-- Share Button -->
+                  <button class="filter-btn">
+                    <i class="fa-regular fa-paper-plane"></i> Share
+                  </button>
+                  <!-- Bulk Action Dropdown -->
+                  <button class="filter-btn">
+                    Bulk Action <i class="fa-solid fa-angle-down"></i>
+                  </button>
                 </div>
-                <span class="page-info light-text">Items per page</span>
-                <span class="page-info-text">1-10 of 200 items</span>
-              </div>
-              <div class="pagination-right">
-                <div class="pagination-item">
-                  <select class="custom-select">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </select>
+              </header>
+
+              <!-- Table -->
+              <table>
+                <thead>
+                  <tr>
+                    <th>
+                      <label class="custom-checkbox">
+                        <input type="checkbox" id="select-all">
+                        <span></span>
+                      </label>
+                    </th>
+                    <th>Customer Name <i class="bi bi-filter"></i></th>
+                    <th>Order Date <i class="bi bi-filter"></i></th>
+                    <th>Order Type <i class="bi bi-filter"></i></th>
+                    <th>Tracking ID <i class="bi bi-filter"></i></th>
+                    <th>Order Total <i class="bi bi-filter"></i></th>
+                    <th>Action <i class="bi bi-filter"></i></th>
+                    <th>Status <i class="bi bi-filter"></i></th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="row-checkbox">
+                        <span></span>
+                      </label>
+                    </td>
+                    <td onclick="window.location.href='view-orders.html';" style="cursor: pointer;">Janet Adebayo</td>
+                    <td>12 Aug 2022 - 12:25 am</td>
+                    <td>Home Delivery</td>
+                    <td>9348fj73 <i class="fa-regular fa-copy"></i></td>
+                    <td>₦25,000.00</td>
+                    <td>
+                      <div class="dropdown-container">
+                        <button class="action-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                          aria-expanded="false">
+                          Completed <i class="fa-solid fa-angle-down"></i>
+                        </button>
+                        <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="timePeriod2">
+                          <li><a class="dropdown-item" href="#">Completed</a></li>
+                          <li><a class="dropdown-item" href="#">In Progress</a></li>
+                          <li><a class="dropdown-item" href="#">In Progress</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                    <td><button class="status-btn completed">Completed</button></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="row-checkbox">
+                        <span></span>
+                      </label>
+                    </td>
+                    <td onclick="window.location.href='view-orders.html';" style="cursor: pointer;">Daniel Afolabi</td>
+                    <td>19 Oct 2023 - 10:45 am</td>
+                    <td>Pick Up</td>
+                    <td>0392dh29 <i class="fa-regular fa-copy"></i></td>
+                    <td>₦15,000.00</td>
+                    <td>
+                      <div class="dropdown-container">
+                        <button class="action-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                          aria-expanded="false">
+                          In-Progress <i class="fa-solid fa-angle-down"></i>
+                        </button>
+                        <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="timePeriod2">
+                          <li><a class="dropdown-item" href="#">Completed</a></li>
+                          <li><a class="dropdown-item" href="#">In Progress</a></li>
+                          <li><a class="dropdown-item" href="#">Pending</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                    <td><button class="status-btn in-progress">In-Progress</button></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="row-checkbox">
+                        <span></span>
+                      </label>
+                    </td>
+                    <td onclick="window.location.href='view-orders.html';" style="cursor: pointer;">Daniel Afolabi</td>
+                    <td>19 Oct 2023 - 10:45 am</td>
+                    <td>Pick Up</td>
+                    <td>0392dh29 <i class="fa-regular fa-copy"></i></td>
+                    <td>₦15,000.00</td>
+                    <td>
+                      <div class="dropdown-container">
+                        <button class="action-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                          aria-expanded="false">
+                          Pending<i class="fa-solid fa-angle-down"></i>
+                        </button>
+                        <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="timePeriod2">
+                          <li><a class="dropdown-item" href="#">Completed</a></li>
+                          <li><a class="dropdown-item" href="#">In Progress</a></li>
+                          <li><a class="dropdown-item" href="#">Pending</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                    <td><button class="status-btn pending">Pending </button></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="row-checkbox">
+                        <span></span>
+                      </label>
+                    </td>
+                    <td onclick="window.location.href='view-orders.html';" style="cursor: pointer;">Janet Adebayo</td>
+                    <td>12 Aug 2022 - 12:25 am</td>
+                    <td>Home Delivery</td>
+                    <td>9348fj73 <i class="fa-regular fa-copy"></i></td>
+                    <td>₦25,000.00</td>
+                    <td>
+                      <div class="dropdown-container">
+                        <button class="action-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                          aria-expanded="false">
+                          Completed <i class="fa-solid fa-angle-down"></i>
+                        </button>
+                        <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="timePeriod2">
+                          <li><a class="dropdown-item" href="#">Completed</a></li>
+                          <li><a class="dropdown-item" href="#">In Progress</a></li>
+                          <li><a class="dropdown-item" href="#">Pending</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                    <td><button class="status-btn completed">Completed</button></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="row-checkbox">
+                        <span></span>
+                      </label>
+                    </td>
+                    <td onclick="window.location.href='view-orders.html';" style="cursor: pointer;">Daniel Afolabi</td>
+                    <td>19 Oct 2023 - 10:45 am</td>
+                    <td>Pick Up</td>
+                    <td>0392dh29 <i class="fa-regular fa-copy"></i></td>
+                    <td>₦15,000.00</td>
+                    <td>
+                      <div class="dropdown-container">
+                        <button class="action-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                          aria-expanded="false">
+                          In-Progress <i class="fa-solid fa-angle-down"></i>
+                        </button>
+                        <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="timePeriod2">
+                          <li><a class="dropdown-item" href="#">Completed</a></li>
+                          <li><a class="dropdown-item" href="#">In Progress</a></li>
+                          <li><a class="dropdown-item" href="#">Pending</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                    <td><button class="status-btn in-progress">In-Progress</button></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="row-checkbox">
+                        <span></span>
+                      </label>
+                    </td>
+                    <td onclick="window.location.href='view-orders.html';" style="cursor: pointer;">Daniel Afolabi</td>
+                    <td>19 Oct 2023 - 10:45 am</td>
+                    <td>Pick Up</td>
+                    <td>0392dh29 <i class="fa-regular fa-copy"></i></td>
+                    <td>₦15,000.00</td>
+                    <td>
+                      <div class="dropdown-container">
+                        <button class="action-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                          aria-expanded="false">
+                          Pending <i class="fa-solid fa-angle-down"></i>
+                        </button>
+                        <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="timePeriod2">
+                          <li><a class="dropdown-item" href="#">Completed</a></li>
+                          <li><a class="dropdown-item" href="#">In Progress</a></li>
+                          <li><a class="dropdown-item" href="#">Pending </a></li>
+                        </ul>
+                      </div>
+                    </td>
+                    <td><button class="status-btn pending">Pending </button></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- pegination -->
+              <div class="pagination-section">
+                <div class="pagination-left">
+                  <div class="pagination-item">
+                    <select class="custom-select">
+                      <option value="10">10</option>
+                      <option value="20">20</option>
+                      <option value="30">30</option>
+                      <option value="50">50</option>
+                    </select>
+                  </div>
+                  <span class="page-info light-text">Items per page</span>
+                  <span class="page-info-text">1-10 of 200 items</span>
                 </div>
-                <span class="page-info light-text">of 44 pages</span>
-                <div class="pagination-icons">
-                  <i class="fa-solid fa-angle-left"></i>
-                  <i class="fa-solid fa-angle-right"></i>
+                <div class="pagination-right">
+                  <div class="pagination-item">
+                    <select class="custom-select">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+                  <span class="page-info light-text">of 44 pages</span>
+                  <div class="pagination-icons">
+                    <i class="fa-solid fa-angle-left"></i>
+                    <i class="fa-solid fa-angle-right"></i>
+                  </div>
                 </div>
               </div>
+
+
+
             </div>
-            
-            
-            
-          </div>
-        </section>
+          </section>
         </section>
       </main>
     </div>

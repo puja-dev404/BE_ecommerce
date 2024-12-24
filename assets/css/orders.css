@@ -32,7 +32,7 @@ body {
   font-size: 1.2rem;
   color: rgba(69, 70, 78, 1);
   font-weight: 500;
- 
+
 }
 
 
@@ -43,25 +43,15 @@ body {
   border-radius: 12px;
 }
 
-.order-box h5{
-  color: #8B8D97;
-  font-size: 15px;
-}
-.order-box p{
-  font-size: 16px;
-  color: #45464E;
-}
- .sub-text{
-  color: #8B8D97;
-  font-size: 16px;
- }
+
 /* Custom Dropdown Button */
 .custom-dropdown-btn {
   border: none;
   font-size: 14px;
   color: #8B8D97;
   display: flex;
-  justify-content: flex-start; 
+  justify-content: flex-start;
+  /* Align the button content to the left */
   background-color: transparent;
 }
 
@@ -69,6 +59,7 @@ body {
 .custom-dropdown-btn i {
   margin-left: 4px;
   margin-top: 1px;
+  /* Adds proper vertical alignment */
 }
 
 
@@ -76,14 +67,16 @@ body {
 .custom-dropdown-menu {
   margin-top: 5px;
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   border: none;
   width: auto;
   min-width: 100px;
   padding: 0;
   background-color: white;
-  left: 0; 
+  left: 0;
+  /* Align dropdown to the left */
   text-align: left;
+  /* Ensure text is left-aligned */
 }
 
 /* Custom Dropdown Item */
@@ -97,8 +90,10 @@ body {
 
 /* Hover Effect */
 .custom-dropdown-menu .dropdown-item:hover {
-  color: #4e5fe4; /* Change text color on hover */
-  background-color: transparent; /* No background on hover */
+  color: #4e5fe4;
+  /* Change text color on hover */
+  background-color: transparent;
+  /* No background on hover */
 }
 
 /* Remove Border from Items */
@@ -426,12 +421,12 @@ table {
 }
 
 thead th {
-  border-top: 1px solid #E1E2E9;
+  border-top: 1px solid #ddd;
   text-align: left;
   font-size: 15px;
   font-weight: 600;
   padding: 12px 8px;
-  border-bottom: 1px solid #E1E2E9;
+  border-bottom: 1px solid #ddd;
   color: #2C2D33;
 }
 
@@ -569,7 +564,9 @@ tbody td {
   display: block;
 }
 
-/* Pagination Section */
+
+
+/* Pagination section */
 .pagination-section {
   display: flex;
   justify-content: space-between;
@@ -577,7 +574,7 @@ tbody td {
   margin: 10px 0;
   padding: 8px 0;
   font-size: 14px;
-  border-top: 1px solid #E1E2E9;
+  border-top: 1px solid #ddd;
 }
 
 /* Left and Right Containers */
@@ -593,42 +590,11 @@ tbody td {
   display: flex;
   align-items: center;
   background-color: #5e636614;
-  /* padding: 5px 5px; */
+  padding: 5px 8px;
   border-radius: 5px;
   font-size: 15px;
   color: #8b8d97;
   gap: 5px;
-}
-
-/* Custom Select Styling */
-.custom-select {
-  border: none;  
-  background-color: transparent;  
-  font-size: 15px;
-  color: #8b8d97;
-  padding: 5px 8px;
-  font-family: inherit;
-  cursor: pointer;
-  position: relative; 
-}
-
-.custom-select:focus {
-  outline: none;  
-  box-shadow: none;  
-}
-
-
-/* Pagination Icons */
-.pagination-icons i {
-  font-size: 16px;
-  color: #8b8d97;
-  cursor: pointer;
-  margin: 0 5px;
-}
-
-/* Hover Effect for Icons */
-.pagination-icons i:hover {
-  color: #45464E;
 }
 
 /* Page Info */
@@ -697,12 +663,27 @@ tbody td {
 }
 
 /* Amount Section Styles */
+.amount-section {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.amount-content {
+  display: flex;
+  gap: 10px;
+  /* Adds spacing between label and value */
+  align-items: center;
+}
 
 .amount-label {
-    font-weight: 500;
-    color: #2C2D33;
-    font-size: 16px !important; 
-  
+  font-weight: bold;
+  color: #333;
+}
+
+.amount-value {
+  font-size: 16px;
+  color: #007bff;
 }
 
 /* custumer veiw page css */
@@ -721,9 +702,98 @@ tbody td {
   color: #5570F1;
 }
 
-
-
-.total-row {
-  border-top: 1px solid #E1E2E9; 
+.filter-menu {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  position: absolute;
+  left: 0;
+  top: -5px;
+  z-index: 999;
 }
 
+.filter-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: start;
+}
+
+.filter-section {
+  margin-bottom: 15px;
+}
+
+.filter-menu .label {
+  font-size: 12px;
+  color: #1C1D22;
+  margin-bottom: 5px;
+  font-weight: 400;
+  text-align: start;
+}
+
+.order-type label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.order-type input {
+  margin-right: 8px;
+}
+
+.filter-dropdown {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.amount-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.amount-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.amount-input {
+  width: 100px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.amount-label {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 3px;
+}
+
+.filter-button {
+  text-align: center;
+}
+
+.filter-button button {
+  background-color: #5c6ef8;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 0;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.filter-button button:hover {
+  background-color: #4a5ac9;
+}
