@@ -43,21 +43,32 @@ body {
   border-radius: 12px;
 }
 
-
+.order-box h5{
+  color: #8B8D97;
+  font-size: 15px;
+}
+.order-box p{
+  font-size: 16px;
+  color: #45464E;
+}
+ .sub-text{
+  color: #8B8D97;
+  font-size: 16px;
+ }
 /* Custom Dropdown Button */
 .custom-dropdown-btn {
   border: none;
   font-size: 14px;
   color: #8B8D97;
   display: flex;
-  justify-content: flex-start; /* Align the button content to the left */
+  justify-content: flex-start; 
   background-color: transparent;
 }
 
 /* Custom Dropdown Button Icon */
 .custom-dropdown-btn i {
   margin-left: 4px;
-  margin-top: 1px; /* Adds proper vertical alignment */
+  margin-top: 1px;
 }
 
 
@@ -71,8 +82,8 @@ body {
   min-width: 100px;
   padding: 0;
   background-color: white;
-  left: 0; /* Align dropdown to the left */
-  text-align: left; /* Ensure text is left-aligned */
+  left: 0; 
+  text-align: left;
 }
 
 /* Custom Dropdown Item */
@@ -198,7 +209,7 @@ body {
   gap: 10px;
 }
 
-/* Action Buttons */
+/* Action Buttons in table sectiom */
 .filter-btn {
   position: relative;
   display: flex;
@@ -218,6 +229,165 @@ body {
 .filter-btn i {
   font-size: 14px;
 }
+/* General Filter Menu Styles */
+.filter-menu {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  position: absolute;
+  left: 0;
+  top: -5px;
+  z-index: 999;
+}
+
+/* Title Styles */
+.filter-title {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: start;
+  color: #1C1D22;
+}
+
+/* Label Styles */
+.label, .amount-label {
+  font-size: 15px;
+  color: #53545C;
+  font-weight: 400;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Order Type and Checkbox Styling */
+.order-type label {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #53545C;
+  font-weight: 400;
+}
+
+.order-type input {
+  margin-right: 8px;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #E1E2E9;
+  border-radius: 8px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.order-type input:focus,
+.order-type input:hover {
+  outline: none;
+  box-shadow: none;
+  border-color: #ddd; 
+}
+
+.order-type input:checked {
+  background-color: #4e5fe4;
+  border-color: #4e5fe4;
+}
+
+/* Dropdown Select Styling */
+.filter-dropdown {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #ffffff;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  background-image: none; 
+}
+
+.filter-dropdown:focus, 
+.filter-dropdown:hover {
+  outline: none;
+  border-color: #ddd; 
+}
+
+.filter-dropdown option {
+  background-color: #ffffff; 
+  color: #333333; 
+}
+
+.filter-dropdown option[value="all"] {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* Amount Section Styling */
+.amount-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.amount-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.amount-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+  appearance: none;
+}
+
+.amount-input:focus,
+.amount-input:hover {
+  outline: none;
+  box-shadow: none;
+  border-color: #ddd; 
+}
+
+
+/* Button Styling */
+.filter-button button {
+  background-color: #5570F1;
+  color: #ffffff;
+  padding: 7px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-button button:hover {
+  background-color: #5570F1;
+}
+
+/* Remove Hover and Focus Borders */
+.filter-dropdown:focus, 
+.amount-input:focus, 
+.order-type input:focus, 
+.filter-button button:focus {
+  outline: none;
+  box-shadow: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    input[type="number"] {
+        -moz-appearance: textfield;
+        appearance: none;
+    }
 
 /* Search Bar */
 .search-bar {
@@ -256,12 +426,12 @@ table {
 }
 
 thead th {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #E1E2E9;
   text-align: left;
   font-size: 15px;
   font-weight: 600;
   padding: 12px 8px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #E1E2E9;
   color: #2C2D33;
 }
 
@@ -300,7 +470,6 @@ tbody td {
 /* Checkmark (Tick) */
 .custom-checkbox span::after {
   content: '\2713';
-  /* Unicode for checkmark */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -400,9 +569,7 @@ tbody td {
   display: block;
 }
 
-
-
-/* Pagination section */
+/* Pagination Section */
 .pagination-section {
   display: flex;
   justify-content: space-between;
@@ -410,7 +577,7 @@ tbody td {
   margin: 10px 0;
   padding: 8px 0;
   font-size: 14px;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #E1E2E9;
 }
 
 /* Left and Right Containers */
@@ -426,11 +593,42 @@ tbody td {
   display: flex;
   align-items: center;
   background-color: #5e636614;
-  padding: 5px 8px;
+  /* padding: 5px 5px; */
   border-radius: 5px;
   font-size: 15px;
   color: #8b8d97;
   gap: 5px;
+}
+
+/* Custom Select Styling */
+.custom-select {
+  border: none;  
+  background-color: transparent;  
+  font-size: 15px;
+  color: #8b8d97;
+  padding: 5px 8px;
+  font-family: inherit;
+  cursor: pointer;
+  position: relative; 
+}
+
+.custom-select:focus {
+  outline: none;  
+  box-shadow: none;  
+}
+
+
+/* Pagination Icons */
+.pagination-icons i {
+  font-size: 16px;
+  color: #8b8d97;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+/* Hover Effect for Icons */
+.pagination-icons i:hover {
+  color: #45464E;
 }
 
 /* Page Info */
@@ -499,27 +697,12 @@ tbody td {
 }
 
 /* Amount Section Styles */
-.amount-section {
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-}
-
-.amount-content {
-  display: flex;
-  gap: 10px;
-  /* Adds spacing between label and value */
-  align-items: center;
-}
 
 .amount-label {
-  font-weight: bold;
-  color: #333;
-}
-
-.amount-value {
-  font-size: 16px;
-  color: #007bff;
+    font-weight: 500;
+    color: #2C2D33;
+    font-size: 16px !important; 
+  
 }
 
 /* custumer veiw page css */
@@ -538,98 +721,9 @@ tbody td {
   color: #5570F1;
 }
 
-.filter-menu {
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: 300px;
-  position: absolute;
-  left: 0;
-  top: -5px;
-  z-index: 999;
+
+
+.total-row {
+  border-top: 1px solid #E1E2E9; 
 }
 
-.filter-title {
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 20px;
-  text-align: start;
-}
-
-.filter-section {
-  margin-bottom: 15px;
-}
-
-.filter-menu .label {
-  font-size: 12px;
-  color: #1C1D22;
-  margin-bottom: 5px;
-  font-weight: 400;
-  text-align: start;
-}
-
-.order-type label {
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 5px;
-}
-
-.order-type input {
-  margin-right: 8px;
-}
-
-.filter-dropdown {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 14px;
-}
-
-.amount-section {
-  display: flex;
-  flex-direction: column;
-}
-
-.amount-inputs {
-  display: flex;
-  justify-content: space-between;
-}
-
-.amount-input {
-  width: 100px;
-  padding: 8px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 14px;
-  text-align: center;
-}
-
-.amount-label {
-  font-size: 12px;
-  color: #666;
-  margin-bottom: 3px;
-}
-
-.filter-button {
-  text-align: center;
-}
-
-.filter-button button {
-  background-color: #5c6ef8;
-  color: #ffffff;
-  font-size: 16px;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 0;
-  width: 100%;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.filter-button button:hover {
-  background-color: #4a5ac9;
-}

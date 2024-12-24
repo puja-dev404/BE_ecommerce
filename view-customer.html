@@ -87,7 +87,7 @@
       <!-- Main Content -->
       <main class="main-content p-3">
         <!-- Orders Header -->
-        <section class="orders-header d-flex justify-content-between align-items-center mb-4 p-3">
+        <section class="orders-header d-flex justify-content-between align-items-center">
           <!-- Left Side: Order Info -->
           <div class="d-flex align-items-center gap-4 left_sec">
             <h5 class="mb-0">
@@ -96,10 +96,12 @@
             <h5 class="mb-0">
               Customer Since <span class="text_muted">12 Sept 2022 - 12:55 pm</span>
             </h5>
-            <h5 class="mb-0 header-tracking">
-              Tracking ID <span class="text_muted">9348fjr73</span>
-              <i class="fa-regular fa-copy  ms-1"></i>
-            </h5>
+            <a href="#" class="text-decoration-none d-inline-flex align-items-center left_sec header-tracking">
+              <h5 class="mb-0 header-tracking me-2">
+                  Tracking ID <span class="text_muted">9348fjr73</span>
+              </h5>
+              <i class="fa-regular fa-copy "></i>
+          </a>
           </div>
         </section>
         
@@ -118,8 +120,8 @@
                       <i class="fa-solid fa-user fs-5"></i>
                     </div>
                     <div>
-                      <h5 class="text-start text-dark mb-0">Janet Adebayo</h5>
-                      <p class="mb-0 text-muted">Customer since 12 Sept 2022</p>
+                      <h5 class="text-start mb-0">Janet Adebayo</h5>
+                      <p class="mb-0 text-muted">Customer since <span class="text-dark fw-medium">12 Sept 2022</span></p>
                     </div>
                   </div>
                   <!-- Status Button -->
@@ -131,13 +133,13 @@
                 <div class="row">
                   <!-- Phone Section -->
                   <div class="col-6 text-start">
-                    <small class="text-muted">Phone</small>
-                    <p class="text-dark mb-0">+123 456 7890</p>
+                    <small class="sub-text">Phone</small>
+                    <p class="mb-0">+123 456 7890</p>
                   </div>
                   <!-- Email Section -->
                   <div class="col-6 text-start">
-                    <small class="text-muted text-start">Email</small>
-                    <p class="text-dark mb-0">janet.adebayo@example.com</p>
+                    <small class="sub-text text-star">Email</small>
+                    <p class=" mb-0">janet.adebayo@example.com</p>
                   </div>
                 </div>
               </article>
@@ -155,13 +157,13 @@
                 <div class="row">
                   <!-- Home Addres Section -->
                   <div class="col-6 text-start">
-                    <small class="text-muted">Home Addres</small>
-                    <p class="text-dark mb-0">No. 15 Adekunle Street, Yaba, Lagos State</p>
+                    <small class="sub-text">Home Addres</small>
+                    <p class=" mb-0">No. 15 Adekunle Street, Yaba, Lagos State</p>
                   </div>
                   <!-- Billing Address Section -->
                   <div class="col-6 text-start">
-                    <small class="text-muted text-start">Billing Address</small>
-                    <p class="text-dark mb-0">No. 15 Adekunle Street, Yaba, Lagos State</p>
+                    <small class="sub-text text-start">Billing Address</small>
+                    <p class=" mb-0">No. 15 Adekunle Street, Yaba, Lagos State</p>
                   </div>
                 </div>
               </article>
@@ -190,7 +192,7 @@
                   <!-- Contact Details -->
                   <div class="row">
                     <div class="col-6 text-start">
-                      <small class="text-muted">Total Orders</small>
+                      <small class="sub-text">Total Orders</small>
                       <p class="text-dark mb-0">₦50,000.00</p>
                     </div>
                   </div>
@@ -199,7 +201,7 @@
           </div>           
         </section>
         <!-- 2nd row -->
-        <section class="container-fluid py-4">
+        <section class="container-fluid">
             <div class="row text-center">
               <!-- 1st Order Box -->
               <div class="col-lg-4">
@@ -301,10 +303,8 @@
                 </article>
               </div>
             </div>
-          </section>
-
-        <!-- Orders Table Section -->
-        <section class="col-12 mt-5">
+            <!-- Orders Table Section -->
+        <section class="col-12 mt-3">
           <div class="table-container">
             <header class="table-header">
               <h2>Janet's Orders</h2>
@@ -432,6 +432,10 @@
 </table>
 </div>
 </section>
+        </section>
+
+        
+       
 </main>
 
     </div>

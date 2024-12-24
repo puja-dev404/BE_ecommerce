@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +13,9 @@
   <link rel="stylesheet" href="./assets/css/nav.css">
   <link rel="stylesheet" href="./assets/css/orders.css">
 </head>
+
 <body>
- 
+
   <!-- Main Content -->
   <div class="container-fluid p-0">
     <!-- Sidebar -->
@@ -87,7 +89,7 @@
       <!-- Main Content -->
       <main class="main-content p-3">
         <!-- Orders Header -->
-        <section class="orders-header d-flex justify-content-between align-items-center mb-4 p-3">
+        <section class="orders-header d-flex justify-content-between align-items-center">
           <!-- Left Side: Order Info -->
           <div class="d-flex align-items-center gap-4 left_sec">
             <h5 class="mb-0">
@@ -96,15 +98,15 @@
             <h5 class="mb-0">
               Order Date <span class="text_muted">12 Sept 2022 - 12:55 pm</span>
             </h5>
-            <h5 class="mb-0 header-tracking">
-              Tracking ID <span class="text_muted">9348fjr73</span>
-              <i class="fa-regular fa-copy  ms-1"></i>
-            </h5>
+            <a href="#" class="text-decoration-none d-inline-flex align-items-center left_sec header-tracking">
+              <h5 class="mb-0 header-tracking me-2">
+                  Tracking ID <span class="text_muted">9348fjr73</span>
+              </h5>
+              <i class="fa-regular fa-copy "></i>
+          </a>     
           </div>
         </section>
-        
-            
-        <!-- Orders Content -->
+        <!--view Orders Content -->
         <section class="container-fluid py-4">
           <div class="row text-center">
             <!-- 1st Order Box -->
@@ -118,8 +120,8 @@
                       <i class="fa-solid fa-user fs-5"></i>
                     </div>
                     <div>
-                      <h5 class="text-start text-dark mb-0">Janet Adebayo</h5>
-                      <p class="mb-0 text-muted">Customer since 12 Sept 2022</p>
+                      <h5 class="text-start mb-0">Janet Adebayo</h5>
+                      <p class="mb-0 text-muted">Customer since <span class="text-dark fw-medium">12 Sept 2022</span></p>
                     </div>
                   </div>
                   <!-- Status Button -->
@@ -131,18 +133,18 @@
                 <div class="row">
                   <!-- Phone Section -->
                   <div class="col-6 text-start">
-                    <small class="text-muted">Phone</small>
-                    <p class="text-dark mb-0">+123 456 7890</p>
+                    <span class="sub-text">Phone</span>
+                    <p class="mb-0">+123 456 7890</p>
                   </div>
                   <!-- Email Section -->
                   <div class="col-6 text-start">
-                    <small class="text-muted text-start">Email</small>
-                    <p class="text-dark mb-0">janet.adebayo@example.com</p>
+                    <span class="sub-text text-start">Email</span>
+                    <p class="mb-0">janet.adebayo@example.com</p>
                   </div>
                 </div>
               </article>
             </div>
-            
+
             <!-- 2nd Order Box -->
             <div class="col-lg-4">
               <article class="order-box p-3 bg-white rounded h-100">
@@ -155,13 +157,13 @@
                 <div class="row">
                   <!-- Home Addres Section -->
                   <div class="col-6 text-start">
-                    <small class="text-muted">Home Addres</small>
-                    <p class="text-dark mb-0">No. 15 Adekunle Street, Yaba, Lagos State</p>
+                    <span class=" sub-text">Home Addres</span>
+                    <p class="mb-0">No. 15 Adekunle Street, Yaba, Lagos State</p>
                   </div>
                   <!-- Billing Address Section -->
                   <div class="col-6 text-start">
-                    <small class="text-muted text-start">Billing Address</small>
-                    <p class="text-dark mb-0">No. 15 Adekunle Street, Yaba, Lagos State</p>
+                    <span class="sub-text text-start">Billing Address</span>
+                    <p class="mb-0">No. 15 Adekunle Street, Yaba, Lagos State</p>
                   </div>
                 </div>
               </article>
@@ -175,180 +177,178 @@
                     <i class="bi bi-credit-card fs-5"></i>
                   </div>
                 </div>
-                  <!-- Contact Details -->
-                  <div class="row">
-                    <!-- Payment Method Section -->
-                    <div class="col-6 text-start">
-                      <small class="text-muted">Payment Method</small>
-                      <p class="text-dark mb-0">Master Card</p>
-                    </div>
-                    <!-- Order Type Section -->
-                    <div class="col-6 text-start">
-                      <small class="text-muted text-start">Order Type</small>
-                      <p class="text-dark mb-0">Home Delivery</p>
-                    </div>
+                <!-- Contact Details -->
+                <div class="row">
+                  <!-- Payment Method Section -->
+                  <div class="col-6 text-start">
+                    <span class="sub-text">Payment Method</span>
+                    <p class="mb-0">Master Card</p>
                   </div>
+                  <!-- Order Type Section -->
+                  <div class="col-6 text-start">
+                    <span class="sub-text ">Order Type</span>
+                    <p class="mb-0">Home Delivery</p>
+                  </div>
+                </div>
               </article>
             </div>
           </div>
-        </section>
-
-        <!-- Orders Table Section -->
-        <section class="col-12 mt-5">
-          <div class="table-container">
-            <header class="table-header">
-              <h2>Items <span class="header_text">3</span></h2>
-              <div class="table-actions">
-                <!-- Search Bar -->
-                <div class="search-bar">
-                  <i class="bi bi-search"></i>
-                  <input type="text" placeholder="Search" />
+          <!-- Orders Table Section -->
+          <section class="col-12 mt-4">
+            <div class="table-container">
+              <header class="table-header">
+                <h2>Items <span class="header_text">3</span></h2>
+                <div class="table-actions">
+                  <!-- Search Bar -->
+                  <div class="search-bar">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="Search" />
+                  </div>
+                  <!-- Filter Button -->
+                  <button class="filter-btn">
+                    <i class="bi bi-funnel"></i> Filter
+                  </button>
+                  <!-- Date Picker Button -->
+                  <button class="filter-btn">
+                    <i class="fa-regular fa-calendar-days"></i> Filter
+                  </button>
+                  <!-- Share Button -->
+                  <button class="filter-btn">
+                    <i class="fa-regular fa-paper-plane"></i> Share
+                  </button>
+                  <!-- Bulk Action Dropdown -->
+                  <button class="filter-btn">
+                    Bulk Action <i class="fa-solid fa-angle-down"></i>
+                  </button>
                 </div>
-                <!-- Filter Button -->
-                <button class="filter-btn">
-                  <i class="bi bi-funnel"></i> Filter
-                </button>
-                <!-- Date Picker Button -->
-                <button class="filter-btn">
-                  <i class="fa-regular fa-calendar-days"></i> Filter
-                </button>
-                <!-- Share Button -->
-                <button class="filter-btn">
-                  <i class="fa-regular fa-paper-plane"></i> Share
-                </button>
-                <!-- Bulk Action Dropdown -->
-                <button class="filter-btn">
-                  Bulk Action <i class="fa-solid fa-angle-down"></i>
-                </button>
-              </div>
-            </header>
+              </header>
 
-            <!-- Table -->
-          <!-- Table -->
-<table class="custom-table">
-  <thead>
-    <tr>
-      <th>
-        <label class="custom-checkbox">
-          <input type="checkbox" id="select-all">
-          <span></span>
-        </label>
-      </th>
-      <th>Product Name<i class="bi bi-filter"></i></th>
-      <th>Unit Price <i class="bi bi-filter"></i></th>
-      <th>Qty <i class="bi bi-filter"></i></th>
-      <th>Discount <i class="bi bi-filter"></i></th>
-      <th>Order Total <i class="bi bi-filter"></i></th>
-      <th>Action <i class="bi bi-filter"></i></th>
-      <th>Status <i class="bi bi-filter"></i></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <label class="custom-checkbox">
-          <input type="checkbox" class="row-checkbox">
-          <span></span>
-        </label>
-      </td>
-      <td>
-        <div class="product-cell">
-          <img src="./assets/images/earing.jpg" alt="earing" class="product-img">
-          Earing
-        </div>
-      </td>
-      <td>₦25,000.00</td>
-      <td>2</td>
-      <td>₦0.00</td>
-      <td>₦50,000.00</td>
-      <td>
-        <div class="dropdown-container">
-          <button class="action-btn dropdown-toggle">
-            Pending <i class="fa-solid fa-angle-down"></i>
-          </button>
-          <ul class="dropdown-menu">
-            <li data-status="completed" class="dropdown-item">Completed</li>
-            <li data-status="in-progress" class="dropdown-item">In Progress</li>
-            <li data-status="pending" class="dropdown-item">Pending</li>
-          </ul>
-        </div>
-      </td>
-      <td><button class="status-btn pending">Pending </button></td>
-    </tr>
-    <tr>
-      <td>
-        <label class="custom-checkbox">
-          <input type="checkbox" class="row-checkbox">
-          <span></span>
-        </label>
-      </td>
-      <td>
-        <div class="product-cell">
-          <img src="./assets/images/pendent.jpg" alt="pendent" class="product-img">
-          Pendent
-        </div>
-      </td>
-      <td>₦25,000.00</td>
-      <td>2</td>
-      <td>₦0.00</td>
-      <td>₦50,000.00</td>
-      <td>
-        <div class="dropdown-container">
-          <button class="action-btn dropdown-toggle">
-            Pending <i class="fa-solid fa-angle-down"></i>
-          </button>
-          <ul class="dropdown-menu">
-            <li data-status="completed" class="dropdown-item">Completed</li>
-            <li data-status="in-progress" class="dropdown-item">In Progress</li>
-            <li data-status="pending" class="dropdown-item">Pending</li>
-          </ul>
-        </div>
-      </td>
-      <td><button class="status-btn pending">Pending </button></td>
-    </tr>
-    <tr class="custom-border-bottom">
-      <td>
-        <label class="custom-checkbox">
-          <input type="checkbox" class="row-checkbox">
-          <span></span>
-        </label>
-      </td>
-      <td>
-        <div class="product-cell">
-          <img src="./assets/images/watch.jpg" alt="watch" class="product-img">
-          Watch
-        </div>
-      </td>
-      <td>₦25,000.00</td>
-      <td>2</td>
-      <td>₦0.00</td>
-      <td>₦50,000.00</td>
-      <td>
-        <div class="dropdown-container">
-          <button class="action-btn dropdown-toggle">
-            Pending <i class="fa-solid fa-angle-down"></i>
-          </button>
-          <ul class="dropdown-menu">
-            <li data-status="completed" class="dropdown-item">Completed</li>
-            <li data-status="in-progress" class="dropdown-item">In Progress</li>
-            <li data-status="pending" class="dropdown-item">Pending</li>
-          </ul>
-        </div>
-      </td>
-      <td><button class="status-btn pending">Pending </button></td>
-    </tr>
-  </tbody>
-</table>
-
-<!-- Table -->
-<!-- Amount Section -->
-<div class="amount-section">
-  <div class="amount-content">
-    <span class="amount-label">Total Amount:</span>
-    <span class="amount-value">₦150,000.00</span>
-  </div>
-</div>
-          </div>
+              <!-- Table -->
+              <!-- Table -->
+              <div class="table-container">
+                <table class="custom-table">
+                  <thead>
+                    <tr>
+                      <th>
+                        <label class="custom-checkbox">
+                          <input type="checkbox" id="select-all">
+                          <span></span>
+                        </label>
+                      </th>
+                      <th>Product Name<i class="bi bi-filter"></i></th>
+                      <th>Unit Price <i class="bi bi-filter"></i></th>
+                      <th>Qty <i class="bi bi-filter"></i></th>
+                      <th>Discount <i class="bi bi-filter"></i></th>
+                      <th>Order Total <i class="bi bi-filter"></i></th>
+                      <th>Action <i class="bi bi-filter"></i></th>
+                      <th>Status <i class="bi bi-filter"></i></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <label class="custom-checkbox">
+                          <input type="checkbox" class="row-checkbox">
+                          <span></span>
+                        </label>
+                      </td>
+                      <td>
+                        <div class="product-cell">
+                          <img src="./assets/images/earing.jpg" alt="earing" class="product-img">
+                          Earing
+                        </div>
+                      </td>
+                      <td>₦25,000.00</td>
+                      <td>2</td>
+                      <td>₦0.00</td>
+                      <td>₦50,000.00</td>
+                      <td>
+                        <div class="dropdown-container">
+                          <button class="action-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Pending <i class="fa-solid fa-angle-down"></i>
+                          </button>
+                          <ul class="dropdown-menu custom-dropdown-menu active" aria-labelledby="timePeriod2">
+                            <li><a class="dropdown-item" href="#">Completed</a></li>
+                            <li><a class="dropdown-item" href="#">In Progress</a></li>
+                            <li><a class="dropdown-item" href="#">Pending</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                      <td><button class="status-btn pending">Pending</button></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="custom-checkbox">
+                          <input type="checkbox" class="row-checkbox">
+                          <span></span>
+                        </label>
+                      </td>
+                      <td>
+                        <div class="product-cell">
+                          <img src="./assets/images/pendent.jpg" alt="pendent" class="product-img">
+                          Pendent
+                        </div>
+                      </td>
+                      <td>₦25,000.00</td>
+                      <td>2</td>
+                      <td>₦0.00</td>
+                      <td>₦50,000.00</td>
+                      <td>
+                        <div class="dropdown-container">
+                          <button class="action-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Pending <i class="fa-solid fa-angle-down"></i>
+                          </button>
+                          <ul class="dropdown-menu custom-dropdown-menu active" aria-labelledby="timePeriod2">
+                            <li><a class="dropdown-item" href="#">Completed</a></li>
+                            <li><a class="dropdown-item" href="#">In Progress</a></li>
+                            <li><a class="dropdown-item" href="#">Pending</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                      <td><button class="status-btn pending">Pending</button></td>
+                    </tr>
+                    <tr class="custom-border-bottom">
+                      <td>
+                        <label class="custom-checkbox">
+                          <input type="checkbox" class="row-checkbox">
+                          <span></span>
+                        </label>
+                      </td>
+                      <td>
+                        <div class="product-cell">
+                          <img src="./assets/images/watch.jpg" alt="watch" class="product-img">
+                          Watch
+                        </div>
+                      </td>
+                      <td>₦25,000.00</td>
+                      <td>2</td>
+                      <td>₦0.00</td>
+                      <td>₦50,000.00</td>
+                      <td>
+                        <div class="dropdown-container">
+                          <button class="action-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Pending <i class="fa-solid fa-angle-down"></i>
+                          </button>
+                          <ul class="dropdown-menu custom-dropdown-menu active" aria-labelledby="timePeriod2">
+                            <li><a class="dropdown-item" href="#">Completed</a></li>
+                            <li><a class="dropdown-item" href="#">In Progress</a></li>
+                            <li><a class="dropdown-item" href="#">Pending</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                      <td><button class="status-btn pending">Pending</button></td>
+                    </tr>
+                    <!-- Total Row -->
+                    <tr class="total-row">
+                      <td colspan="4"></td>
+                      <td class="amount-label">Total</td>
+                      <td class="amount-label">₦150,000.00</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>              
+            </div>
+          </section>
         </section>
       </main>
 
@@ -357,4 +357,5 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./assets/js/order.js"></script>
 </body>
+
 </html>
