@@ -43,14 +43,14 @@ body {
   border-radius: 12px;
 }
 
-.order-box h5{
+/* .order-box h5{
   color: #8B8D97;
   font-size: 15px;
-}
-.order-box p{
+} */
+/* .order-box p{
   font-size: 16px;
   color: #45464E;
-}
+} */
  .sub-text{
   color: #8B8D97;
   font-size: 16px;
@@ -97,8 +97,8 @@ body {
 
 /* Hover Effect */
 .custom-dropdown-menu .dropdown-item:hover {
-  color: #4e5fe4; /* Change text color on hover */
-  background-color: transparent; /* No background on hover */
+  color: #4e5fe4; 
+  background-color: transparent; 
 }
 
 /* Remove Border from Items */
@@ -109,13 +109,14 @@ body {
 /* Custom styling for text-muted paragraphs */
 .custom-text-muted {
   color: #8B8D97;
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 /* Custom styling for h5 box count */
 .custom-box-count {
   color: #45464E;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .icon-box {
