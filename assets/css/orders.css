@@ -43,17 +43,26 @@ body {
   border-radius: 12px;
 }
 
-/* .order-box h5{
-  color: #8B8D97;
-  font-size: 15px;
-} */
-/* .order-box p{
-  font-size: 16px;
+.order-box h5{
   color: #45464E;
-} */
+  font-size: 17px;
+}
+.order-box p{
+  font-size: 14px;
+  color: #8B8D97;
+  line-height: normal;
+  font-weight: 400;
+}
  .sub-text{
   color: #8B8D97;
-  font-size: 16px;
+  font-size: 14px;
+ }
+ .sub-info{
+  color: #45464E !important;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: normal;
+
  }
 /* Custom Dropdown Button */
 .custom-dropdown-btn {
@@ -110,7 +119,7 @@ body {
 .custom-text-muted {
   color: #8B8D97;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 400 !important;
 }
 
 /* Custom styling for h5 box count */
@@ -182,7 +191,6 @@ body {
 
 /* tables css start here */
 
-/* Table Container */
 .table-container {
   background: #fff;
   border-radius: 8px;
@@ -254,13 +262,17 @@ body {
 
 /* Label Styles */
 .label, .amount-label {
-  font-size: 15px;
-  color: #53545C;
-  font-weight: 400;
+  font-weight: 500;
+  color: #2C2D33;
+  font-size: 16px !important; 
   margin-bottom: 8px;
   display: block;
 }
-
+.subamount-label {
+  font-weight: 500;
+  color: #2C2D33;
+  font-size: 16px !important; 
+}
 /* Order Type and Checkbox Styling */
 .order-type label {
   display: flex;
@@ -697,14 +709,6 @@ tbody td {
   align-items: center;
 }
 
-/* Amount Section Styles */
-
-.amount-label {
-    font-weight: 500;
-    color: #2C2D33;
-    font-size: 16px !important; 
-  
-}
 
 /* custumer veiw page css */
 .icon-box-customer {
@@ -728,3 +732,13 @@ tbody td {
   border-top: 1px solid #E1E2E9; 
 }
 
+/* view custumr btn */
+.customer-btn{
+  background-color: #CC5F5F;
+  border: none;
+  border-radius:12px ;
+  font-size: 14px;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-top: 4px;
+}
