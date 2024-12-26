@@ -43,17 +43,15 @@ body {
   border-radius: 12px;
 }
 
-.order-box h5 {
+/* .order-box h5{
   color: #8B8D97;
   font-size: 15px;
 }
-
-.order-box p {
+.order-box p{
   font-size: 16px;
   color: #45464E;
 }
-
-.sub-text {
+ .sub-text{
   color: #8B8D97;
   font-size: 16px;
 }
@@ -114,13 +112,14 @@ body {
 /* Custom styling for text-muted paragraphs */
 .custom-text-muted {
   color: #8B8D97;
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 /* Custom styling for h5 box count */
 .custom-box-count {
   color: #45464E;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .icon-box {
@@ -234,6 +233,7 @@ body {
 .filter-btn i {
   font-size: 14px;
 }
+
 /* General Filter Menu Styles */
 .filter-menu {
   background-color: #ffffff;
@@ -257,7 +257,8 @@ body {
 }
 
 /* Label Styles */
-.label, .amount-label {
+.label,
+.amount-label {
   font-size: 15px;
   color: #53545C;
   font-weight: 400;
@@ -289,7 +290,7 @@ body {
 .order-type input:hover {
   outline: none;
   box-shadow: none;
-  border-color: #ddd; 
+  border-color: #ddd;
 }
 
 .order-type input:checked {
@@ -308,20 +309,20 @@ body {
   appearance: none;
   outline: none;
   cursor: pointer;
-  -webkit-appearance: none; 
-  -moz-appearance: none; 
-  background-image: none; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: none;
 }
 
-.filter-dropdown:focus, 
+.filter-dropdown:focus,
 .filter-dropdown:hover {
   outline: none;
-  border-color: #ddd; 
+  border-color: #ddd;
 }
 
 .filter-dropdown option {
-  background-color: #ffffff; 
-  color: #333333; 
+  background-color: #ffffff;
+  color: #333333;
 }
 
 .filter-dropdown option[value="all"] {
@@ -354,7 +355,7 @@ body {
 .amount-input:hover {
   outline: none;
   box-shadow: none;
-  border-color: #ddd; 
+  border-color: #ddd;
 }
 
 
@@ -377,22 +378,24 @@ body {
 }
 
 /* Remove Hover and Focus Borders */
-.filter-dropdown:focus, 
-.amount-input:focus, 
-.order-type input:focus, 
+.filter-dropdown:focus,
+.amount-input:focus,
+.order-type input:focus,
 .filter-button button:focus {
   outline: none;
   box-shadow: none;
 }
+
 input[type="number"]::-webkit-outer-spin-button,
-    input[type="number"]::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
-    input[type="number"] {
-        -moz-appearance: textfield;
-        appearance: none;
-    }
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: none;
+}
 
 .filter-menu {
   background-color: #ffffff;
