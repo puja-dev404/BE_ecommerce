@@ -731,6 +731,12 @@ tbody td {
 .total-row {
   border-top: 1px solid #E1E2E9; 
 }
+.user-name h5{
+  font-size: 16px;
+  font-weight: 400;
+  color: #8B8D97;
+
+}
 
 /* view custumr btn */
 .customer-btn{
