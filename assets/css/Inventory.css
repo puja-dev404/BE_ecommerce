@@ -91,6 +91,7 @@ color: #83898C;
 }
 
 /* Show dropdown on click */
+
 .custom-input .dropdown-icon {
 cursor: pointer;
 }
@@ -100,7 +101,7 @@ cursor: pointer;
 position: absolute;
 right: 8px;
 top: 50%; 
-transform: translateY(-50%); 
+transform: translateY(-58%); 
 display: flex;
 flex-direction: column;
 justify-content: center;

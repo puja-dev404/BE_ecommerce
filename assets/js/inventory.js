@@ -1,34 +1,5 @@
  
-//  stock js
-document.addEventListener('DOMContentLoaded', function() {
-  const quantityInput = document.getElementById('quantityStock');
-  const incrementButton = document.getElementById('increment');
-  const decrementButton = document.getElementById('decrement');
 
-  // Increment function
-  incrementButton.addEventListener('click', function() {
-    let currentValue = parseInt(quantityInput.value, 10);
-    quantityInput.value = currentValue + 1;
-  });
-
-  // Decrement function
-  decrementButton.addEventListener('click', function() {
-    let currentValue = parseInt(quantityInput.value, 10);
-    if (currentValue > 1) {
-      quantityInput.value = currentValue - 1;
-    }
-  });
-});
-// 
-document.getElementById('increment').addEventListener('click', function() {
-  let input = document.getElementById('quantityStock');
-  input.value = parseInt(input.value) + 1; // Increment the value
-});
-
-document.getElementById('decrement').addEventListener('click', function() {
-  let input = document.getElementById('quantityStock');
-  input.value = Math.max(0, parseInt(input.value) - 1); 
-});
 
 // toggle
 document.addEventListener('DOMContentLoaded', function() {
@@ -57,4 +28,13 @@ document.addEventListener('DOMContentLoaded', function() {
       expiryDateContent.classList.add('d-none'); 
     }
   });
+});
+document.getElementById('increment').addEventListener('click', function() {
+  let input = document.getElementById('quantityStock');
+  input.value = parseInt(input.value, 10) + 1; // Increment the value
+});
+
+document.getElementById('decrement').addEventListener('click', function() {
+  let input = document.getElementById('quantityStock');
+  input.value = Math.max(0, parseInt(input.value, 10) - 1); // Decrement the value, but not below 0
 });
