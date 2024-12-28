@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="./assets/css/sidebar.css">
   <link rel="stylesheet" href="./assets/css/nav.css">
   <link rel="stylesheet" href="./assets/css/orders.css">
+  <link rel="stylesheet" href="./assets/css/Inventory.css">
+
 </head>
 <body>
  
@@ -96,10 +98,12 @@
             <h5 class="mb-0">
              Date Added <span class="text_muted">12 Sept 2022 - 12:55 pm</span>
             </h5>
-            <h5 class="mb-0 header-tracking">
-              Product URL <span class="text_muted"> 1nancystores.com/palmonas-Earings</span>
-              <i class="fa-regular fa-copy  ms-1"></i>
-            </h5>
+            <a href="#" class="text-decoration-none d-inline-flex align-items-center left_sec header-tracking">
+              <h5 class="mb-0 header-tracking me-2">
+                  Tracking ID <span class="text_muted">1nancystores.com/palmonas-Earings</span>
+              </h5>
+              <i class="fa-regular fa-copy "></i>
+          </a>
           </div>
         </section>
         
@@ -108,14 +112,17 @@
         <section class="container-fluid py-4">
           <div class="row text-center">
             <!-- 1st Order Box -->
-            <div class="col-lg-3">
-              <article class="order-box p-3 bg-white rounded h-100 d-flex align-items-center justify-content-center">
-                <img src="" alt="product Image" class="img-responsive">
+            <div class="col-lg-2">
+              <article class="order-box p-3 bg-white rounded h-100 d-flex align-items-center justify-content-center overflow-hidden">
+                <div class="img-box object-fit-contain">
+                  <img src="./assets/images/earing.jpg" alt="product Image" class="w-100">
+                </div>
               </article>
             </div>
             
             
-            <div class="col-lg-3">
+            
+            <div class="col-lg-4">
               <article class="order-box p-3 bg-white rounded h-100">
                 <!-- Top Section -->
                 <div class="d-flex align-items-center justify-content-between mb-2">
@@ -125,7 +132,8 @@
                       <i class="fa-solid fa-user fs-5"></i>
                     </div>
                     <div>
-                      <p class="mb-0 text-muted">Last Order 12 Sept 2022</p>
+                      <p class="mb-0 text-muted">Last Order 
+                        <span class="text-dark fw-medium">12 Sept 2022</span></p>
                     </div>
                   </div>
                   <!-- Status Button -->
@@ -137,13 +145,13 @@
                 <div class="row">
                   <!-- Phone Section -->
                   <div class="col-6 text-start">
-                    <small class="text-muted">Price</small>
-                    <p class="text-dark mb-0">₦25,000.00</p>
+                    <small class="sub-text">Price</small>
+                    <p class="mb-0 sub-info fw-bold">₦25,000.00</p>
                   </div>
                   <!-- Email Section -->
                   <div class="col-6 text-start">
-                    <small class="text-muted text-start">In-Stock</small>
-                    <p class="text-dark mb-0">20</p>
+                    <small class="sub-text">In-Stock</small>
+                    <p class="mb-0 sub-info fw-bold">20</p>
                   </div>
                 </div>
               </article>
@@ -171,8 +179,8 @@
                   <!-- Contact Details -->
                   <div class="row">
                     <div class="col-6 text-start">
-                      <small class="text-muted">Total Orders</small>
-                      <p class="text-dark mb-0">₦50,000.00</p>
+                      <small class="sub-text">Total Orders</small>
+                      <p class="mb-0 sub-info fw-bold">₦50,000.00</p>
                     </div>
                   </div>
               </article>
@@ -200,13 +208,13 @@
                 <div class="row">
                   <!-- Home Addres Section -->
                   <div class="col-6 text-start">
-                    <small class="text-muted">Views</small>
-                    <p class="text-dark mb-0">1,200</p>
+                    <small class="sub-text">Views</small>
+                    <p class="mb-0 sub-info fw-bold">1,200</p>
                   </div>
                   <!-- Billing Address Section -->
                   <div class="col-6 text-start">
-                    <small class="text-muted text-start">Favourite</small>
-                    <p class="text-dark mb-0">23</p>
+                    <small class="sub-text">Favourite</small>
+                    <p class="mb-0 sub-info fw-bold">23</p>
                   </div>
                 </div>
               </article>

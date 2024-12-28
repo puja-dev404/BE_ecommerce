@@ -1,87 +1,40 @@
  
-//  stock js
- document.addEventListener('DOMContentLoaded', function() {
-  const quantityInput = document.getElementById('quantityStock');
-  const incrementButton = document.getElementById('increment');
-  const decrementButton = document.getElementById('decrement');
 
-  // Increment function
-  incrementButton.addEventListener('click', function() {
-    let currentValue = parseInt(quantityInput.value, 10);
-    quantityInput.value = currentValue + 1;
+
+// toggle
+document.addEventListener('DOMContentLoaded', function() {
+  // Select the discount toggle input checkbox
+  const discountToggle = document.getElementById('discountToggle');
+  const discountContent = document.getElementById('discountToggleSection').querySelector('.toggle-content');
+
+  // Select the expiry date toggle input checkbox
+  const expiryDateToggle = document.getElementById('expiryDateToggle');
+  const expiryDateContent = document.getElementById('expiryDateToggleSection').querySelector('.toggle-content');
+
+  // Toggle the visibility of the discount content based on checkbox state
+  discountToggle.addEventListener('change', function() {
+    if (this.checked) {
+      discountContent.classList.remove('d-none'); 
+    } else {
+      discountContent.classList.add('d-none'); 
+    }
   });
 
-  // Decrement function
-  decrementButton.addEventListener('click', function() {
-    let currentValue = parseInt(quantityInput.value, 10);
-    if (currentValue > 1) {
-      quantityInput.value = currentValue - 1;
+  // Toggle the visibility of the expiry date content based on checkbox state
+  expiryDateToggle.addEventListener('change', function() {
+    if (this.checked) {
+      expiryDateContent.classList.remove('d-none'); 
+    } else {
+      expiryDateContent.classList.add('d-none'); 
     }
   });
 });
-
-
-// slect category
-
-document.addEventListener('DOMContentLoaded', function() {
-  const dropdownIcons = document.querySelectorAll('.dropdown-icon');
-  const dropdownMenus = document.querySelectorAll('.dropdown-menu');
-
-  dropdownIcons.forEach((icon, index) => {
-    icon.addEventListener('click', function(event) {
-      event.stopPropagation(); // Prevent event from bubbling up
-      dropdownMenus[index].classList.toggle('show');
-    });
-  });
-
-  // Close dropdowns when clicking outside
-  document.addEventListener('click', function(event) {
-    dropdownMenus.forEach(menu => {
-      if (!event.target.closest('.custom-input')) {
-        menu.classList.remove('show');
-      }
-    });
-  });
-
-  // Handle item selection from dropdown
-  dropdownMenus.forEach(menu => {
-    menu.addEventListener('click', function(event) {
-      if (event.target.tagName === 'LI') {
-        const inputId = menu.previousElementSibling.id;
-        document.getElementById(inputId).value = event.target.textContent;
-        menu.classList.remove('show');
-      }
-    });
-  });
+document.getElementById('increment').addEventListener('click', function() {
+  let input = document.getElementById('quantityStock');
+  input.value = parseInt(input.value, 10) + 1; // Increment the value
 });
 
-// toggle icon
-document.addEventListener('DOMContentLoaded', function() {
-  // Toggle Discount Section
-  document.getElementById('discountToggle').addEventListener('click', function() {
-    toggleSection('discountToggleSection');
-  });
-
-  // Toggle Expiry Date Section
-  document.getElementById('DateToggle').addEventListener('click', function() {
-    toggleSection('expiryDateToggleSection');
-  });
-
-  // Function to toggle sections
-  function toggleSection(sectionId) {
-    const section = document.getElementById(sectionId);
-    const content = section.querySelector('.toggle-content');
-    const icon = section.querySelector('.toggle-icon');
-
-    content.classList.toggle('d-none');
-    icon.classList.toggle('fa-toggle-on');
-
-    // Handle dropdown toggle for discount options
-    const dropdownIcon = section.querySelector('.dropdown-icon');
-    const dropdownMenu = section.querySelector('.dropdown-menu');
-    dropdownIcon.addEventListener('click', function() {
-      dropdownMenu.classList.toggle('show');
-    });
-  }
+document.getElementById('decrement').addEventListener('click', function() {
+  let input = document.getElementById('quantityStock');
+  input.value = Math.max(0, parseInt(input.value, 10) - 1); // Decrement the value, but not below 0
 });
-
