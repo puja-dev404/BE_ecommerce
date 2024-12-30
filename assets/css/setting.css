@@ -31,26 +31,23 @@
 }
 
 /* Button Styles */
-.update-btn button {
-  background-color: #4e5fe4; 
-  color: #fff; 
+.update-btn {
+  background-color: #4e5fe4;
+  color: #fff;
   font-size: 14px;
   border: none;
   padding: 8px 16px;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 4px;
 }
 
-.update-btn button:hover {
+
+.update-btn:hover {
   background-color: #4e5fe4;
-  color: #fff; 
+  border: none;
+  color: #fff;
 }
-
-.update-btn button:focus {
-  outline: none;
-  box-shadow: none;
-}
-
 
 /* Profile Card */
 .profile-card {
