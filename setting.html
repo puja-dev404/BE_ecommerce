@@ -114,54 +114,53 @@
                   <form>
                     <div class="row flex-column">
                       <!-- First Name -->
-                      <div class="col-lg-12 ">
+                      <div class="col-lg-12">
                         <label for="FirstName" class="form-label form-text">First Name</label>
-                        <div class="custom-input">
-                          <i class="bi bi-person position-absolute"></i>
-                          <input type="text" id="FirstName" placeholder="First Name"
-                            class="form-control form-text bg-light-custom">
+                        <div class="custom-input position-relative">
+                          <i class="bi bi-person position-absolute top-50 start-0 translate-middle-y ms-2"></i>
+                          <input type="text" id="FirstName" placeholder="First Name" class="form-control form-text bg-light-custom ps-5">
                         </div>
                       </div>
                       <!-- Last Name -->
-                      <div class="col-lg-12 ">
+                      <div class="col-lg-12">
                         <label for="LastName" class="form-label form-text">Last Name</label>
-                        <div class="custom-input">
-                          <i class="bi bi-person position-absolute"></i>
-                          <input type="text" id="LastName" placeholder="Last Name"
-                            class="form-control form-text bg-light-custom">
+                        <div class="custom-input position-relative">
+                          <i class="bi bi-person position-absolute top-50 start-0 translate-middle-y ms-2"></i>
+                          <input type="text" id="LastName" placeholder="Last Name" class="form-control form-text bg-light-custom ps-5">
                         </div>
                       </div>
                       <!-- Email -->
-                      <div class="col-lg-12 ">
+                      <div class="col-lg-12">
                         <label for="Email" class="form-label form-text">Email</label>
-                        <div class="custom-input">
-                          <i class="bi bi-envelope position-absolute"></i>
-                          <input type="email" id="Email" placeholder="Email"
-                            class="form-control form-text bg-light-custom">
+                        <div class="custom-input position-relative">
+                          <i class="bi bi-envelope position-absolute top-50 start-0 translate-middle-y ms-2"></i>
+                          <input type="email" id="Email" placeholder="Email" class="form-control form-text bg-light-custom ps-5">
                         </div>
                       </div>
                       <!-- Phone Number -->
-                      <div class="col-lg-12 ">
+                      <div class="col-lg-12">
                         <label for="PhoneNumber" class="form-label form-text">Phone Number</label>
-                        <div class="custom-input">
-                          <i class="bi bi-telephone-fill position-absolute"></i>
-                          <input type="text" id="PhoneNumber" placeholder="Phone Number"
-                            class="form-control form-text bg-light-custom">
+                        <div class="d-flex gap-2">
+                          <div class="custom-input position-relative w-25">
+                            <i class="fa-solid fa-city position-absolute top-50 start-0 translate-middle-y ms-2"></i>
+                            <input type="text" id="CityCode" placeholder="City Code" class="form-control form-text bg-light-custom ps-5">
+                          </div>
+                          <div class="custom-input position-relative flex-grow-1">
+                            <i class="position-absolute top-50 start-0 translate-middle-y ms-2"></i>
+                            <input type="text" id="PhoneNumber" placeholder="Phone Number" class="form-control form-text bg-light-custom ps-3">
+                          </div>
                         </div>
                       </div>
-
-                      
                       <!-- Address -->
-                      <div class="col-lg-12 ">
+                      <div class="col-lg-12">
                         <label for="Address" class="form-label form-text">Address</label>
-                        <div class="custom-input">
-                          <i class="bi bi-geo-alt position-absolute"></i>
-                          <input type="text" id="Address" placeholder="Address"
-                            class="form-control form-text bg-light-custom">
+                        <div class="custom-input position-relative">
+                          <i class="bi bi-geo-alt position-absolute top-50 start-0 translate-middle-y ms-2"></i>
+                          <input type="text" id="Address" placeholder="Address" class="form-control form-text bg-light-custom ps-5">
                         </div>
                       </div>
                       <!-- City -->
-                      <div class="col-lg-12 ">
+                      <div class="col-lg-12">
                         <label for="City" class="form-label form-text">City</label>
                         <div class="custom-input">
                           <select id="City" class="form-control form-text bg-light-custom ps-3">
@@ -197,19 +196,16 @@
                       </div>
                     </div>
                   </form>
-
                 </div>
-                <!-- profile img -->
+              
+                <!-- Profile Image Section -->
                 <div class="profile-card">
-                  <!-- Profile Image -->
-                  <div class="image-section">
+                  <div class="image-section text-center">
                     <img src="./assets/images/setting-profile.png" alt="User Profile" class="profile-pic">
-
-                    <!-- Action Buttons -->
-                    <div class="icon-section">
+                    <div class="icon-section d-flex justify-content-center gap-3 mt-3">
                       <label class="icon-box-img upload-button">
                         <i class="bi bi-cloud-upload"></i>
-                        <input type="file" accept="image/*">
+                        <input type="file" accept="image/*" class="d-none">
                       </label>
                       <button class="icon-box-img delete-button">
                         <i class="bi bi-trash3"></i>
@@ -217,7 +213,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div>              
             </div>
           </div>
         </div>
