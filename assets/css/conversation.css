@@ -243,8 +243,8 @@ body {
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  width: 90%;
-  max-width: 400px;
+  width: 95%; 
+  max-width: 500px; 
   display: none;
   z-index: 1050;
   opacity: 0;
@@ -284,7 +284,13 @@ body {
   margin-left: 0.75rem;
   flex-grow: 1;
 }
-
-.gap {
-  gap: 1rem;
+.M_contact-lists{
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 9px;
+  min-height: 762px;
 }
+
+/* .gap {
+  gap: 1rem;
+} */
