@@ -68,14 +68,50 @@ body {
 .main-chat-section {
   background-color: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
 
 .contacts-header {
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.contacts-header .left-text {
+  color: black;
+}
+
+.contacts-header .right-text {
+  color: gray;
+}
+/* Search Box */
+.search-input {
+  border: 1px solid #CFD3D4; 
+  border-radius: 6px;
+  padding-left: 40px;
+  height: 45px; 
+  width: 100%; 
+  font-size: 16px; 
+  font-weight: 400;
+  position: relative; 
+}
+.search_sub_class{
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: #ABAFB1; 
+}
+
+
+.search-input:focus {
+  outline: none;
+  border-color: #ABAFB1;
+}
+
+.search-input:focus::placeholder {
+  color: #ABAFB1;
 }
 
 .contact {
@@ -87,30 +123,85 @@ body {
   border-bottom: none;
 }
 
-.contact img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
 
 .contact .details {
   margin-left: 0.75rem;
 }
 
-.contact .name {
-  font-weight: bold;
+
+
+.users-list{
+  max-height: calc(100vh - 297px);
+  overflow: auto;
+}
+.contact-lists{
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 24px;
+  min-height: 762px;
+}
+/* User Image & Online Dot */
+.user-img-container {
+  position: relative;
 }
 
-.contact .status {
-  font-size: 0.9rem;
-  color: gray;
+.user-img-container img {
+  border-radius: 8px;
 }
 
-/* .main-content {
-  
-} */
+.online-dot {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 14px;
+  height: 14px;
+  background-color: #5570F1;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.status-btn {
+  background-color: #FEF5EA; 
+  color: #000000;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.number-btn{
+  background-color: #FFCC91; 
+  color: #000000;
+  padding: 5px 10px;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.details .name {
+  font-weight: 500;
+  color: #45464E;
+  font-size: 16px;
+}
+.time-text{
+  font-size: 14px;
+  color: #8B8D97;
+  font-weight: 400;
+}
+.details .status {
+  margin-top: 5px;
+  font-size: 15px;
+  color: #8B8D97;
+  font-weight: 400;
+}
+/* main chat section  */
+.main-chat-section{
+  min-height: 762px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-
+}
 .main-chat-section h4{
   color: #000000;
   font-weight: 500;
@@ -122,27 +213,6 @@ body {
   font-size: 16px;
   font-weight: 400;
 }
-
-.users-list{
-  max-height: calc(100vh - 297px);
-    overflow: auto;
-}
-.contact-lists{
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  min-height: 762px;
-}
-.main-chat-section{
-  min-height: 762px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-}
-
 /* General styling for blurred effect */
 .overlay {
   position: fixed;
@@ -150,15 +220,15 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
-  display: none;  /* Hidden by default */
-  z-index: 1040;  /* Positioned below modal */
-  filter: blur(5px); /* Apply blur to the background */
-  transition: all 0.3s ease-in-out; /* Smooth transition */
+  background: rgba(0, 0, 0, 0.5); 
+  display: none;  
+  z-index: 1040;  
+  filter: blur(5px); 
+  transition: all 0.3s ease-in-out; 
 }
 .overlay.show {
   display: block; 
-  backdrop-filter: blur(8px); /* Apply blur to the background */
+  backdrop-filter: blur(8px);
   background-color: #A3A3A333;
 }
 
@@ -175,16 +245,15 @@ body {
   border-radius: 8px;
   width: 90%;
   max-width: 400px;
-  display: none; /* Keep it hidden initially */
-  z-index: 1050; /* Ensure modal is on top of everything */
+  display: none;
+  z-index: 1050;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out; /* Smooth fade-in effect */
+  transition: opacity 0.3s ease-in-out; 
 }
 
-/* Modal show class to make it visible */
 .modal-custom.show {
-  display: block; /* Make the modal visible */
-  opacity: 1;     /* Fade it in */
+  display: block; 
+  opacity: 1;     
 }
 
 /* Rest of your CSS remains the same */
