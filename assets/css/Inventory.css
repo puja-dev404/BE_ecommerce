@@ -9,7 +9,15 @@
   cursor: pointer;
   margin-top: 4px;
 }
-
+.edit_btn{
+  background-color: #1C1D22;
+    border: none;
+    border-radius: 12px;
+    font-size: 14px;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-top: 4px;
+}
 .btn-add:hover {
   background-color: #4e5fe4;
   border: none;
