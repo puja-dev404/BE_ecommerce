@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./assets/css/nav.css">
   <link rel="stylesheet" href="./assets/css/orders.css">
 </head>
+
 <body>
   <div class="container-fluid p-0">
     <!-- Sidebar -->
@@ -88,11 +89,57 @@
         <!-- Customer Header -->
         <section class="orders-header d-flex justify-content-between align-items-center">
           <h5>Customers Summary</h5>
-      </section>
-            
+        </section>
+
         <!-- Orders Content -->
         <section class="container-fluid px-4">
           <div class="row text-center g-4">
+            <!-- Total Users Card -->
+            <div class="col-lg-4">
+              <article class="order-box p-3 bg-white rounded h-100">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <div class="icon-box d-flex align-items-center justify-content-center p-2">
+                    <i class="bi bi-people fs-5"></i>
+                  </div>
+                </div>
+                <div class="text-start">
+                  <p class="mb-1 custom-text-muted">Total Users</p>
+                  <h5 class="mb-0 custom-box-count fw-bold">1,250 <span class="text-success fw-normal">+15.80%</span>
+                  </h5>
+                </div>
+              </article>
+            </div>
+
+            <!-- Active Users Card -->
+            <div class="col-lg-4">
+              <article class="order-box p-3 bg-white rounded h-100">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <div class="icon-box d-flex align-items-center justify-content-center p-2">
+                    <i class="bi bi-person-check fs-5"></i>
+                  </div>
+                </div>
+                <div class="text-start">
+                  <p class="mb-1 custom-text-muted">Active Users</p>
+                  <h5 class="mb-0 custom-box-count fw-bold">1,180 <span class="text-success fw-normal">+85%</span></h5>
+                </div>
+              </article>
+            </div>
+
+            <!-- Inactive Users Card -->
+            <div class="col-lg-4">
+              <article class="order-box p-3 bg-white rounded h-100">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <div class="icon-box d-flex align-items-center justify-content-center p-2">
+                    <i class="bi bi-person-x fs-5"></i>
+                  </div>
+                </div>
+                <div class="text-start">
+                  <p class="mb-1 custom-text-muted">Inactive Users</p>
+                  <h5 class="mb-0 custom-box-count fw-bold">70 <span class="text-danger fw-normal">-10%</span></h5>
+                </div>
+              </article>
+            </div>
+
             <!-- 1st Order Box -->
             <div class="col-lg-6">
               <article class="order-box p-3  h-100">
@@ -115,11 +162,13 @@
                 <div class="row text-start">
                   <div class="col">
                     <p class="mb-1 custom-text-muted">All Customers</p>
-                    <h5 class="mb-0 custom-box-count fw-bold">1,250 <span class="text-success fw-normal">+15.80%</span></h5>
+                    <h5 class="mb-0 custom-box-count fw-bold">1,250 <span class="text-success fw-normal">+15.80%</span>
+                    </h5>
                   </div>
                   <div class="col">
                     <p class="mb-1 custom-text-muted">Active</p>
-                    <h5 class="mb-0 custom-box-count fw-bold">1,180 <span class="text-success fw-normal">+85%</span></h5>
+                    <h5 class="mb-0 custom-box-count fw-bold">1,180 <span class="text-success fw-normal">+85%</span>
+                    </h5>
                   </div>
                   <div class="col">
                     <p class="mb-1 custom-text-muted">In-Active</p>
@@ -166,81 +215,67 @@
             </div>
           </div>
 
-                  <!--Customer Table Section -->
-        <div class="row ">
-          <section class="col-12 mt-4">
-            <div class="table-container py-4">
-              <header class="table-header">
-                <h2>Customer</h2>
-                <div class="table-actions">
-                  <!-- Search Bar -->
-                  <div class="search-bar">
-                    <i class="bi bi-search"></i>
-                    <input type="text" placeholder="Search" />
+          <!--Customer Table Section -->
+          <div class="row ">
+            <section class="col-12 mt-4">
+              <div class="table-container py-4">
+                <header class="table-header">
+                  <h2>Customer</h2>
+                  <div class="table-actions">
+                    <!-- Search Bar -->
+                    <div class="search-bar">
+                      <i class="bi bi-search"></i>
+                      <input type="text" placeholder="Search" />
+                    </div>
+                    <!-- Filter Button -->
+                    <button class="filter-btn">
+                      <i class="bi bi-funnel"></i> Filter
+                    </button>
+                    <!-- Date Picker Button -->
+                    <button class="filter-btn">
+                      <i class="fa-regular fa-calendar-days"></i> Filter
+                    </button>
+                    <!-- Share Button -->
+                    <button class="filter-btn">
+                      <i class="fa-regular fa-paper-plane"></i> Share
+                    </button>
+                    <!-- Bulk Action Dropdown -->
+                    <button class="filter-btn">
+                      Bulk Action <i class="fa-solid fa-angle-down"></i>
+                    </button>
                   </div>
-                  <!-- Filter Button -->
-                  <button class="filter-btn">
-                    <i class="bi bi-funnel"></i> Filter
-                  </button>
-                  <!-- Date Picker Button -->
-                  <button class="filter-btn">
-                    <i class="fa-regular fa-calendar-days"></i> Filter
-                  </button>
-                  <!-- Share Button -->
-                  <button class="filter-btn">
-                    <i class="fa-regular fa-paper-plane"></i> Share
-                  </button>
-                  <!-- Bulk Action Dropdown -->
-                  <button class="filter-btn">
-                    Bulk Action <i class="fa-solid fa-angle-down"></i>
-                  </button>
-                </div>
-              </header>
-  
-              <!-- Table -->
-              <table>
-                <thead>
-                  <tr>
-                    <th>
-                      <label class="custom-checkbox">
-                        <input type="checkbox" id="select-all">
-                        <span></span>
-                      </label>
-                    </th>
-                    <th>Customer Name <i class="bi bi-filter"></i></th>
-                    <th>Email <i class="bi bi-filter"></i></th>
-                    <th>Phone <i class="bi bi-filter"></i></th>
-                    <th>Orders <i class="bi bi-filter"></i></th>
-                    <th>Order Total <i class="bi bi-filter"></i></th>
-                    <th>Customer Since <i class="bi bi-filter"></i></th>
-                    <th>Status <i class="bi bi-filter"></i></th>
-                  </tr>
-                </thead>
-  
-                <tbody>
-                  <tr>
-                    <td>
-                      <label class="custom-checkbox">
-                        <input type="checkbox" class="row-checkbox">
-                        <span></span>
-                      </label>
-                    </td>
-                    <td onclick="window.location.href='view-customer.html';" style="cursor: pointer;">Janet Adebayo</td>
-                    <td>Janet Adebayo</td>
-                    <td>janet.a@mail.com <i class="fa-regular fa-copy"></i></td>
-                    <td>+2348065650633 <i class="fa-regular fa-copy"></i></td>
-                    <td>10</td>
-                    <td>12 Aug 2022 - 12:25 am</td>
-                    <td><button class="status-btn completed">Active</button></td>
-                  </tr>
-                  <tr>
+                </header>
+
+                <!-- Table -->
+                <table>
+                  <thead>
+                    <tr>
+                      <th>
+                        <label class="custom-checkbox">
+                          <input type="checkbox" id="select-all">
+                          <span></span>
+                        </label>
+                      </th>
+                      <th>Customer Name <i class="bi bi-filter"></i></th>
+                      <th>Email <i class="bi bi-filter"></i></th>
+                      <th>Phone <i class="bi bi-filter"></i></th>
+                      <th>Orders <i class="bi bi-filter"></i></th>
+                      <th>Order Total <i class="bi bi-filter"></i></th>
+                      <th>Customer Since <i class="bi bi-filter"></i></th>
+                      <th>Status <i class="bi bi-filter"></i></th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
                       <td>
                         <label class="custom-checkbox">
                           <input type="checkbox" class="row-checkbox">
                           <span></span>
                         </label>
                       </td>
-                      <td onclick="window.location.href='view-customer.html';" style="cursor: pointer;">Janet Adebayo</td>
+                      <td onclick="window.location.href='view-customer.html';" style="cursor: pointer;">Janet Adebayo
+                      </td>
                       <td>Janet Adebayo</td>
                       <td>janet.a@mail.com <i class="fa-regular fa-copy"></i></td>
                       <td>+2348065650633 <i class="fa-regular fa-copy"></i></td>
@@ -255,7 +290,8 @@
                           <span></span>
                         </label>
                       </td>
-                      <td onclick="window.location.href='view-customer.html';" style="cursor: pointer;">Janet Adebayo</td>
+                      <td onclick="window.location.href='view-customer.html';" style="cursor: pointer;">Janet Adebayo
+                      </td>
                       <td>Janet Adebayo</td>
                       <td>janet.a@mail.com <i class="fa-regular fa-copy"></i></td>
                       <td>+2348065650633 <i class="fa-regular fa-copy"></i></td>
@@ -270,7 +306,8 @@
                           <span></span>
                         </label>
                       </td>
-                      <td onclick="window.location.href='view-customer.html';" style="cursor: pointer;">Janet Adebayo</td>
+                      <td onclick="window.location.href='view-customer.html';" style="cursor: pointer;">Janet Adebayo
+                      </td>
                       <td>Janet Adebayo</td>
                       <td>janet.a@mail.com <i class="fa-regular fa-copy"></i></td>
                       <td>+2348065650633 <i class="fa-regular fa-copy"></i></td>
@@ -285,7 +322,8 @@
                           <span></span>
                         </label>
                       </td>
-                      <td onclick="window.location.href='view-customer.html';" style="cursor: pointer;">Janet Adebayo</td>
+                      <td onclick="window.location.href='view-customer.html';" style="cursor: pointer;">Janet Adebayo
+                      </td>
                       <td>Janet Adebayo</td>
                       <td>janet.a@mail.com <i class="fa-regular fa-copy"></i></td>
                       <td>+2348065650633 <i class="fa-regular fa-copy"></i></td>
@@ -300,7 +338,8 @@
                           <span></span>
                         </label>
                       </td>
-                      <td onclick="window.location.href='view-customer.html';" style="cursor: pointer;">Janet Adebayo</td>
+                      <td onclick="window.location.href='view-customer.html';" style="cursor: pointer;">Janet Adebayo
+                      </td>
                       <td>Janet Adebayo</td>
                       <td>janet.a@mail.com <i class="fa-regular fa-copy"></i></td>
                       <td>+2348065650633 <i class="fa-regular fa-copy"></i></td>
@@ -308,44 +347,60 @@
                       <td>12 Aug 2022 - 12:25 am</td>
                       <td><button class="status-btn completed">Active</button></td>
                     </tr>
-                </tbody>
-              </table>
-  
-              <!-- pegination -->
-             <!-- pegination -->
-            <div class="pagination-section">
-              <div class="pagination-left">
-                <div class="pagination-item">
-                  <select class="custom-select">
-                    <option value="10">10</option>
-                    <option value="20">20</option>
-                    <option value="30">30</option>
-                    <option value="50">50</option>
-                  </select>
-                </div>
-                <span class="page-info light-text">Items per page</span>
-                <span class="page-info-text">1-10 of 200 items</span>
-              </div>
-              <div class="pagination-right">
-                <div class="pagination-item">
-                  <select class="custom-select">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </select>
-                </div>
-                <span class="page-info light-text">of 44 pages</span>
-                <div class="pagination-icons">
-                  <i class="fa-solid fa-angle-left"></i>
-                  <i class="fa-solid fa-angle-right"></i>
+                    <tr>
+                      <td>
+                        <label class="custom-checkbox">
+                          <input type="checkbox" class="row-checkbox">
+                          <span></span>
+                        </label>
+                      </td>
+                      <td onclick="window.location.href='view-customer.html';" style="cursor: pointer;">Janet Adebayo
+                      </td>
+                      <td>Janet Adebayo</td>
+                      <td>janet.a@mail.com <i class="fa-regular fa-copy"></i></td>
+                      <td>+2348065650633 <i class="fa-regular fa-copy"></i></td>
+                      <td>10</td>
+                      <td>12 Aug 2022 - 12:25 am</td>
+                      <td><button class="status-btn completed">Active</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <!-- pegination -->
+                <!-- pegination -->
+                <div class="pagination-section">
+                  <div class="pagination-left">
+                    <div class="pagination-item">
+                      <select class="custom-select">
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                        <option value="50">50</option>
+                      </select>
+                    </div>
+                    <span class="page-info light-text">Items per page</span>
+                    <span class="page-info-text">1-10 of 200 items | Active - 100 | Inactive - 100</span>
+                  </div>
+                  <div class="pagination-right">
+                    <div class="pagination-item">
+                      <select class="custom-select">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                    </div>
+                    <span class="page-info light-text">of 44 pages</span>
+                    <div class="pagination-icons">
+                      <i class="fa-solid fa-angle-left"></i>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            </div>
-          </section>
-        </div>      
+            </section>
+          </div>
 
         </section>
 
