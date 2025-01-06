@@ -677,7 +677,6 @@ tbody td {
   flex-wrap: nowrap;
 }
 
-
 .left_sec .text_muted {
   color: #8B8D97;
   font-size: 16px;
@@ -687,7 +686,6 @@ tbody td {
 .header-tracking i {
   color: #5570f1;
 }
-
 
 .header_text {
   color: #5570f1;
@@ -709,7 +707,6 @@ tbody td {
   align-items: center;
 }
 
-
 /* custumer veiw page css */
 .icon-box-customer {
   background-color: #5570F114;
@@ -725,8 +722,6 @@ tbody td {
 .icon-box-customer i {
   color: #5570F1;
 }
-
-
 
 .total-row {
   border-top: 1px solid #E1E2E9; 

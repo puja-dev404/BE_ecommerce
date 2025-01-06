@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./assets/css/sidebar.css">
   <link rel="stylesheet" href="./assets/css/nav.css">
   <link rel="stylesheet" href="./assets/css/orders.css">
+  <link rel="stylesheet" href="./assets/css/customer.css">
 </head>
 <body>
   <div class="container-fluid p-0">
@@ -172,7 +173,9 @@
             <div class="table-container py-4">
               <header class="table-header">
                 <h2>Customer</h2>
+          
                 <div class="table-actions">
+                  
                   <!-- Search Bar -->
                   <div class="search-bar">
                     <i class="bi bi-search"></i>
@@ -191,9 +194,27 @@
                     <i class="fa-regular fa-paper-plane"></i> Share
                   </button>
                   <!-- Bulk Action Dropdown -->
-                  <button class="filter-btn">
-                    Bulk Action <i class="fa-solid fa-angle-down"></i>
-                  </button>
+                  <button class="edit-category-btn filter-btn">Edit Category</button>
+
+                  <!-- Modal -->
+                  <div id="editCategoryModal" class="modal">
+                      <div class="modal-content">
+                          <span class="close-btn"><i class="fas fa-times"></i></span>
+                          <h2>Edit Category</h2>
+                          <form id="editCategoryForm">
+                              <label for="categoryName">Category Name</label>
+                              <input type="text" id="categoryName" name="categoryName" class="input-field" placeholder="Enter category name">
+              
+                              <label for="status">Status</label>
+                              <select id="status" name="status" class="status-select">
+                                  <option value="active">Active</option>
+                                  <option value="inactive">Inactive</option>
+                              </select>
+              
+                              <button type="submit" class="submit-btn">Edit Category</button>
+                          </form>
+                      </div>
+                  </div>
                 </div>
               </header>
   
@@ -357,6 +378,8 @@
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./assets/js/order.js"></script>
+  <script src="./assets/js/customer.js"></script>
+
 </body>
 
 </html>
